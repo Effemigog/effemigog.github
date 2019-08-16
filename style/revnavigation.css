@@ -1,0 +1,25 @@
+.rev-navigation {
+  padding-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.navigation__img {
+  max-width: 100%;
+  border-radius: 50%; }
+
+.navigation__pic {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%; }
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.navigation__item {
+  padding-right: 20px; }

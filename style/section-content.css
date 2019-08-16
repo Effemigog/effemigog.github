@@ -1,0 +1,30 @@
+.section__content {
+  margin-top: 86px; }
+
+.content__prev {
+  color: #fff; }
+
+.prev__title {
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: bold; }
+
+.prev__text {
+  font-size: 21px;
+  line-height: 1.2;
+  padding-top: 10px; }
+
+.order__button {
+  color: #0f5a47;
+  font-size: 19px;
+  background-color: #fff;
+  padding: 17px 31px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  border: none;
+  line-height: 1.2;
+  font-weight: Bold; }
+
+.content__order {
+  padding-top: 30px; }

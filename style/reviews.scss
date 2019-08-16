@@ -1,0 +1,56 @@
+.reviews{
+    margin-top: 70px;
+    background: url(./../image/revBerry.png) right top no-repeat;
+}
+.reviews::after{
+    content: url(./../image/revBerry2.png);
+    bottom: 0;
+    left: 0;
+}
+.rev__item{
+   transform: translateX(2000px); 
+   padding: 30px;
+}
+ .rev__item-one{
+    transform: translateX(0px); 
+ }
+.rev{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rev__title{
+    font-size: 48px;
+    font-weight: bold;   
+}
+.user__pic{
+    width: 260px;
+    padding-right: 20px;
+}
+.rev__img{
+    max-width: 100%;
+}
+.rev__desc{
+    padding-top: 44px;
+    color: #666666;
+    font-size: 18px;
+    background: url(./../image/rev4.png) right top no-repeat;
+    background-color: #f8faf9;
+    width: 950px;
+    height: 350px;
+    display: block;
+}
+
+   
+
+.rev__desc h3{
+    color: #000000;
+    font-size: 30px;
+ 
+}
+.rev__desc p{
+    padding-top: 35px;
+}
+.user_info{
+    display: flex; 
+}

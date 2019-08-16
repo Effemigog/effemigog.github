@@ -1,0 +1,13 @@
+.title-container{
+    display: flex;
+    justify-content: space-between;
+}
+.left__block{
+    width: 55%;
+    margin-left: 80px;
+}
+.right__block{
+    width: 35%;
+    display: flex;
+    justify-content:flex-end;
+}

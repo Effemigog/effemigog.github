@@ -1,0 +1,18 @@
+.content__icon{
+    padding-top: 66px;
+    padding-bottom: 50px;
+}
+.icon__list{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.icon__item{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: calc(100% / 3 - 45px);
+}
+.icon__pic{
+    padding-right: 10px;
+}

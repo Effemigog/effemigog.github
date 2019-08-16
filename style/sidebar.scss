@@ -1,0 +1,27 @@
+.sidebar{
+    display: flex;
+    align-items: center;
+    margin: 0 42px 70px 0;
+    box-sizing: border-box;
+}
+.pagination__link {
+    width: 6px;
+    height: 6px;
+    display: block;
+    background: #fff;
+    border-radius: 50%;   
+  }
+.pagination__item--border{
+    border: 1px solid #fff;
+    padding: 4px;
+    border-radius: 50%; 
+}
+.pagination__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pagination__item{
+    padding-top: 14px;
+}

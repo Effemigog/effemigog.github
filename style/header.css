@@ -1,0 +1,40 @@
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.nav__list {
+  padding-top: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100%; }
+
+.nav__item {
+  padding-right: 23px;
+  font-size: 18px; }
+
+.logo {
+  padding: 20px 0 0 80px; }
+
+.phone__link {
+  padding-right: 80px;
+  font-size: 24px;
+  color: #fff; }
+
+.nav__link {
+  color: #fff; }
+
+.phone::before {
+  content: url(./../image/phone_.png);
+  top: 0;
+  left: 0; }
+
+.phone {
+  padding-top: 10px; }
