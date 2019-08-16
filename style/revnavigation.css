@@ -14,7 +14,8 @@
 .navigation__pic {
   width: 75px;
   height: 75px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  padding-right: 15px; }
 
 .navigation__list {
   display: -webkit-box;
