@@ -17,14 +17,13 @@
   min-width: 100%; }
 
 .nav__item {
-  padding-right: 23px;
+  padding-right: 24px;
   font-size: 18px; }
 
 .logo {
-  padding: 20px 0 0 80px; }
+  padding-top: 20px; }
 
 .phone__link {
-  padding-right: 80px;
   font-size: 24px;
   color: #fff; }
 
