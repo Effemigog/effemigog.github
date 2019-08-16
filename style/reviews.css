@@ -7,17 +7,6 @@
   bottom: 0;
   left: 0; }
 
-.rev__item {
-  -webkit-transform: translateX(2000px);
-  -ms-transform: translateX(2000px);
-  transform: translateX(2000px);
-  padding: 30px; }
-
-.rev__item-one {
-  -webkit-transform: translateX(0px);
-  -ms-transform: translateX(0px);
-  transform: translateX(0px); }
-
 .rev {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,6 +18,25 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+
+.rev__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.rev__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.navigation__pic:hover ~ .rev-hover {
+  opacity: 1; }
 
 .rev__title {
   font-size: 48px;
@@ -44,12 +52,7 @@
 .rev__desc {
   padding-top: 44px;
   color: #666666;
-  font-size: 18px;
-  background: url(./../image/rev4.png) right top no-repeat;
-  background-color: #f8faf9;
-  width: 950px;
-  height: 350px;
-  display: block; }
+  font-size: 18px; }
 
 .rev__desc h3 {
   color: #000000;
@@ -58,7 +61,7 @@
 .rev__desc p {
   padding-top: 35px; }
 
-.user_info {
+.rev-hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
