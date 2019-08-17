@@ -1,16 +1,28 @@
 .reviews{
+    position: relative;
     margin-top: 70px;
     background: url(./../image/revBerry.png) right top no-repeat;
 }
 .reviews::after{
+    position: absolute;
     content: url(./../image/revBerry2.png);
-    bottom: 0;
+    bottom: 0px;
     left: 0;
-}    
+} 
+.reviews::before{
+    position: absolute;
+    content: url(./../image/revPattern.png);
+    top: 450px;
+    left: 0;
+
+}   
 .rev__item{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    padding: 40px;
+    background: url(./../image/rev4.png) right top no-repeat;
+    background-color: #f8faf9;
 }
 .rev{
     display: flex;
@@ -29,11 +41,10 @@
     max-width: 100%;
 }
 .rev__desc{
-    padding-top: 44px;
+    padding-top: 80px;
     color: #666666;
     font-size: 18px;
-    background: url(./../image/rev4.png) right top no-repeat;
-    background-color: #f8faf9;
+   
 }
 .rev__desc h3{
     color: #000000;
@@ -44,7 +55,8 @@
     padding-top: 35px;
 }
 
-.navigation__img:hover{
-    border: 3px solid green;
+.navigation__pic:hover{
+    border: 3px solid darkgreen;
+    box-sizing: border-box;
 }
 
