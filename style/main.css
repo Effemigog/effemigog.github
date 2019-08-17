@@ -341,7 +341,8 @@ a {
   background: url(./../image/back.jpg) 100% 100% no-repeat;
   background-size: contain;
   background-color: #61c4d9;
-  max-width: 100%; }
+  max-width: 100%;
+  z-index: 0; }
 
 .title::after {
   content: url(./../image/back2.png);
@@ -350,7 +351,7 @@ a {
   top: 18%;
   right: 15%;
   bottom: 0;
-  z-index: 0; }
+  z-index: -1; }
 
 .icon__pic {
   width: 45px;
@@ -422,7 +423,8 @@ a {
   border-radius: 100px;
   border: none;
   line-height: 1.2;
-  font-weight: Bold; }
+  font-weight: Bold;
+  cursor: pointer; }
 
 .content__order {
   padding-top: 30px; }
@@ -433,7 +435,8 @@ a {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  z-index: 1; }
 
 .left__block {
   width: 55%; }
@@ -449,7 +452,8 @@ a {
 
 .content__icon {
   padding-top: 66px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  z-index: 1; }
 
 .icon__list {
   display: -webkit-box;
