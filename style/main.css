@@ -654,11 +654,6 @@ a {
 .rev__desc p {
   padding-top: 35px; }
 
-.navigation__pic:hover {
-  border: 3px solid darkgreen;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
 .rev-navigation {
   padding-top: 60px;
   display: -webkit-box;
@@ -684,6 +679,11 @@ a {
 
 .navigation__item {
   padding-right: 20px; }
+
+.navigation__pic:hover {
+  border: 4px solid darkgreen;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 .sidebar {
   display: -webkit-box;
