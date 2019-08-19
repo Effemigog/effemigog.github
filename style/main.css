@@ -633,7 +633,8 @@ a {
 
 .rev__title {
   font-size: 48px;
-  font-weight: bold; }
+  font-weight: bold;
+  text-transform: uppercase; }
 
 .user__pic {
   width: 260px;
@@ -644,8 +645,8 @@ a {
 
 .rev__desc {
   padding-top: 80px;
-  color: #666666;
-  font-size: 18px; }
+  font-size: 18px;
+  color: #666666; }
 
 .rev__desc h3 {
   color: #000000;
@@ -726,3 +727,90 @@ a {
 
 .pagination__item {
   padding-top: 14px; }
+
+.team-section {
+  padding-top: 75px; }
+
+.team-section::after {
+  content: url(./../image/team-berry.png);
+  bottom: 0;
+  left: 0; }
+
+.team__title {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.team-content {
+  padding-top: 65px; }
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.team__item {
+  padding-right: 25px;
+  text-align: center; }
+
+.team__pic {
+  max-width: 220px;
+  max-height: 290px; }
+
+.team__img {
+  min-width: width 100%; }
+
+.team__name {
+  padding-top: 25px;
+  font-size: 20px;
+  position: relative; }
+
+.team__name::after {
+  position: absolute;
+  content: "";
+  bottom: 10%;
+  right: 10%;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #0f5a47; }
+
+.team__position {
+  padding-top: 20px;
+  font-size: 18px; }
+
+.team__hover {
+  height: 0;
+  overflow: hidden; }
+
+.team__text {
+  padding-top: 5px;
+  font-size: 18px;
+  color: #666666; }
+
+.team__desc:hover .team__hover {
+  height: 100%; }
+
+.team__desc:hover .team__name::after {
+  position: absolute;
+  content: "";
+  bottom: 10%;
+  right: 10%;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #0f5a47; }
