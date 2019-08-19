@@ -788,6 +788,9 @@ a {
   border-right: 5px solid transparent;
   border-top: 10px solid #0f5a47; }
 
+.team__desc:hover .team__name::after {
+  display: none; }
+
 .team__position {
   padding-top: 20px;
   font-size: 18px; }
@@ -804,7 +807,10 @@ a {
 .team__desc:hover .team__hover {
   height: 100%; }
 
-.team__desc:hover .team__name::after {
+.team__hover-name {
+  position: relative; }
+
+.team__desc:hover .team__hover-name::after {
   position: absolute;
   content: "";
   bottom: 10%;
