@@ -1,0 +1,53 @@
+.menu-section{
+    color: #fff;
+    background: url(./../image/menu-back.jpg) center center/cover no-repeat;
+}
+.menu{
+    display: flex;
+    position: relative;
+}
+.accordion{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+}
+.accordion__text{
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+.menu__title{
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 100px 0 0 260px;
+}
+.accordion__title{
+    font-size: 48px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    min-height: 100%;
+}   
+.accordion__desc{
+    display: flex;
+}
+.accordion__list{
+    display: flex;
+}
+.accordion__title-milk{
+    background: url(./../image/menu-milk.jpg) center center no-repeat;
+    background-size: cover;
+}
+.accordion__title-fruit{
+    background: url(./../image/menu-fruct.jpg) center center no-repeat;
+    background-size: cover;
+}
+.accordion__title-berry{
+    background: url(./../image/menu-berry.jpg) center center no-repeat;
+    background-size: cover;
+}
+.accordion__desc-milk:hover .accordion__text-milk{
+    width: 100%;
+    height: 100%;
+}
