@@ -837,16 +837,63 @@ a {
   top: 0;
   right: 0; }
 
-.accordion__text {
-  height: 0;
-  width: 0;
-  overflow: hidden; }
-
 .menu__title {
   font-size: 48px;
   font-weight: bold;
   text-transform: uppercase;
   padding: 100px 0 0 260px; }
+
+.menu__block {
+  width: 30%; }
+
+.map-section {
+  background: url(./../image/map.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  position: relative; }
+
+.footer {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50px;
+  right: 50px; }
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.social__pic {
+  width: 20px;
+  height: 20px;
+  padding-left: 20px;
+  fill: #b3b3b3; }
+
+.social__pic:hover {
+  fill: black; }
+
+.adress {
+  font-size: 21px; }
+
+.phone {
+  font-size: 21px; }
+
+.phone::before {
+  content: url(./../icons/phone.svg);
+  top: 0;
+  left: 0; }
+
+.link__phone {
+  color: #0f5a47; }
 
 .accordion__title {
   font-size: 48px;
@@ -858,10 +905,20 @@ a {
   transform: rotate(180deg);
   min-height: 100%; }
 
+.accordion {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
 .accordion__desc {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  background-color: rgba(57, 60, 62, 0.7); }
 
 .accordion__list {
   display: -webkit-box;
@@ -881,25 +938,34 @@ a {
   background-size: cover; }
 
 .accordion__desc-milk:hover .accordion__text-milk {
-  width: 100%;
-  height: 100%; }
+  width: 30%;
+  height: 100%;
+  padding-left: 20px; }
 
-.map-section {
-  background: url(./../image/map.jpg) center center no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-  position: relative; }
+.accordion__text {
+  height: 0;
+  width: 0;
+  overflow: hidden; }
 
-.footer {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 0; }
+.delivery-section {
+  padding-top: 90px;
+  background: url(./../image/elivery-pattern.png) center center/cover no-repeat; }
 
-.footer-container {
+.delivery__title {
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: bold;
+  color: #0f5a47; }
+
+.delivery__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
