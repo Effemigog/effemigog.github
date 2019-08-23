@@ -59,7 +59,7 @@
                                 здоровьем</p>
                         </div>
                         <div class="content__order">
-                            <button type="button" class="order__button" href="#">заказать</button>
+                            <button type="button" class="button order__button" href="#delivery">заказать</button>
                         </div>
                         <div class="content__icon">
                             <ul class="icon__list">
@@ -349,7 +349,7 @@
                 </div>
             </div>
         </section>
-        <section class="delivery-section">
+        <section class="delivery-section" id="delivery">
             <div class="container delivery-container">
                 <h2 class="delivery__title">закажите доставку</h2>
                 <div class="deliveri">
@@ -391,24 +391,23 @@
                             </div>
                         </div>
                         <div class="form__column">
-                            <div class="form__row">
+                            <div class="form__row form__row--textarea">
                                 <label for="form__block">Комментарий</label>
-                                <textarea class="form__textarea" name="" id="" cols="30" rows="10"></textarea>
+                                <textarea class="form__textarea form__textarea--textarea" name="" id="" cols="30"
+                                    rows="10"></textarea>
                             </div>
-                            <div class="form__row">
-                                <label for="" class="form__block">
-                                    <input type="radio">Потребуется сдача
-                                    <input type="radio">Оплата по карте
+                            <div class="form__row form__row--radio">
+                                <label for="pay" class="form__block form__block--radio">
+                                    <input id="pay" type="radio" class="radio__input">Потребуется сдача
+                                    <input id="pay" type="radio" class="radio__input">Оплата по карте
+                                </label>
+                                <label for="notCall" class="form__block form__block--square">
+                                    <input id="notCall" type="checkbox" class="radio__square">Не перезванивать
                                 </label>
                             </div>
                             <div class="form__row">
-                                <label for="" class="form__block">
-                                    <input type="radio">Не перезванивать
-                                </label>
-                            </div>
-                            <div class="form__row">
-                                <button class="button" type="button">Заказать</button>
-                                <button class="button" type="button">Очистить</button>
+                                <button class="button delivery__button" type="button">Заказать</button>
+                                <button class="button clear__button" type="reset">Очистить</button>
                             </div>
                         </div>
                     </form>

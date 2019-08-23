@@ -8,3 +8,11 @@
     font-weight: bold;
     color: #0f5a47;
 }
+.delivery-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.delivery{
+    padding-top: 30px;
+}
