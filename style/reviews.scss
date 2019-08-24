@@ -23,6 +23,12 @@
     padding: 40px;
     background: url(./../image/rev4.png) right top no-repeat;
     background-color: #f8faf9;
+
+    @include tablets{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 .rev{
     display: flex;
@@ -54,5 +60,10 @@
 }
 .rev__desc p{
     padding-top: 35px;
+}
+.user__desc{
+    @include tablets{
+        padding: 0 15%;
+    }
 }
 

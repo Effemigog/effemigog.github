@@ -1,33 +1,34 @@
 .footer{
     position: absolute;
     content: "";
+    right: 0;
+    left: 0;
     bottom: 0;
-    left: 50px;
-    right: 50px;
     background-color: #fff;
-    min-height: 80px;
+    min-height: rem(80px);
 }
 .footer-container{
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    padding-top: rem(30px);
 }
 .social__list{
     display: flex;
 }
 .social__pic{
-    width: 20px;
-    height: 20px;
-    padding-left: 20px;
+    width: rem(20px);
+    height: rem(20px);
+    padding-left: rem(20px);
     fill: #b3b3b3;
 }
 .social__pic:hover{
     fill: black;
 }
 .adress{
-    font-size: 21px;
+    font-size: rem(21px);
 }
-.phone{
-    font-size: 21px;
+.footer__phone{
+    font-size: rem(21px);
 }
 .phone::before{
     content: url(./../icons/phone.svg);

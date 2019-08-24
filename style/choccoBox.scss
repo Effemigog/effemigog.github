@@ -7,9 +7,13 @@
   text-transform: uppercase;
 }
 .box__text{
-    padding: 27px 300px 0;
+    padding: 1% 23% 0;
     font-size: 18px;
     color: #666666; 
+
+    @include tablets{
+      padding: 1% 16%;
+    }
 }
 
   

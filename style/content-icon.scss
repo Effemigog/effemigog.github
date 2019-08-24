@@ -1,11 +1,15 @@
 .content__icon{
-    padding-top: 66px;
-    padding-bottom: 50px;
+    padding-top: rem(66px);
+    padding-bottom: rem(50px);
     z-index: 1;
 }
 .icon__list{
     display: flex;
     justify-content: space-between;
+
+    @include tablets{
+        justify-content: space-around;
+    }
     
 }
 .icon__item{
@@ -15,5 +19,5 @@
     width: calc(100% / 3 - 45px);
 }
 .icon__pic{
-    padding-right: 10px;
+    padding-right: rem(10px);
 }

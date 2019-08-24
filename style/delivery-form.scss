@@ -1,10 +1,15 @@
 .delivery__form{
     display: flex;
     justify-content: space-between;
+
+    @include tablets{
+        flex-direction: column;
+        
+    }
 }
 .form__row{
     display: flex;
-    padding-top: 20px;
+    padding-top: rem(20px);
     color: #0f5a47;
 }
 .form__row--textarea{
@@ -12,14 +17,18 @@
 }
 .form__column{
     flex: 1;
-    margin-right: 20px;
+    margin-right: rem(20px);
+
+    @include tablets{
+        padding: 0 10%;
+    }
 }
 .form__column:last-child{
     margin-right: 0;
 }
 .form__block {
     flex: 1;
-    margin-right: 20px;
+    margin-right: rem(20px);
     display: block;
   
     &:last-child {
@@ -29,12 +38,22 @@
 .form__input{
     width: 100%;
     background: #fff;
-    padding: 20px 0 20px 0;
+    padding: rem(20px) 0 rem(20px) 0;
     border: none; 
 }
 .form__textarea--textarea{
-    height: 180px;
+    height: rem(180px);
     resize: none;
+}
+.form__row--radio{
+    @include tablets{
+        align-items: center;
+    }
+}
+.form__row--btn{
+    @include tablets{
+        justify-content: center;
+    }
 }
 
 

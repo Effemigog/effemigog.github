@@ -1,10 +1,15 @@
 .title{
     position: relative;
     background: url(./../image/back.jpg) 100% 100% no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-color: #61c4d9;
     max-width: 100%;
     z-index: 0;
+
+
+    @include tablets{
+        background-position: 70%
+    }
 }
 .title::after{
    content: url(./../image/back2.png);

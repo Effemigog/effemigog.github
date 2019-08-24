@@ -1,6 +1,6 @@
 .whyChocco{
     position: relative;
-    margin-top: 120px;
+    margin-top: rem(120px);
     background: url(./../image/sheet.png) left center no-repeat;
 }
 .whyChocco::after{
