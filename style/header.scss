@@ -14,12 +14,14 @@
 	
 }
 .nav::after{
+    @include tablets{
     position: absolute;
     content: "";
     width: 25px;
     border-bottom: 3px solid #fff;
     border-radius: 1px;
-    bottom: 7px;
+    bottom: 5px;
+    }
 }
 .nav::before{
     @include tablets{
@@ -54,11 +56,9 @@
 .nav__link{
     color: #fff;
 }
-.phone::before{
+.phone__link::before{
     content: url(./../image/phone_.png);
     top: 0;
     left: 0;
 }
-.phone{
-    padding-top: rem(10px);
-}
+

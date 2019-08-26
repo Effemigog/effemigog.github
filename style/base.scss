@@ -7,8 +7,8 @@ html, body{
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 16px; 
 
-    @include tablets{
-        font-size: 14px;
+    @include phones{
+        font-size: 13px;
     }
 }
 h1, h2, h3, h4, ul, p{

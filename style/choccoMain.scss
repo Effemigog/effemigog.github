@@ -21,10 +21,18 @@
     @include tablets{
         width: 95%;
     }
+
+    @include phones{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        text-align: left;
+        padding-bottom: 7%;
+        align-items: flex-start;
+    }
 }
 .main__pic{
-    width: rem(65px);
-    height: rem(65px);
+    width: rem(60px);
+    height: rem(60px);
     background-color: #f2f5f4;
     padding: rem(25px);
     border-radius: 50%;
@@ -35,6 +43,10 @@
     padding-top: rem(35px);
     font-style: rem(27px);
     font-weight: bold;
+
+    @include phones{
+        padding-left: 3%;
+    }
 }
 .main__text{
     padding-top: rem(30px);
@@ -43,6 +55,10 @@
 
     @include tablets{
         padding: 0 24% 5%;
+    }
+
+    @include phones{
+        padding: 2% 0 0 3%;
     }
 }
 .dots{

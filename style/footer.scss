@@ -11,6 +11,18 @@
     display: flex;
     justify-content: space-between;
     padding-top: rem(30px);
+
+    @include phones{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.footer-left-block{
+    @include phones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .social__list{
     display: flex;
@@ -30,7 +42,8 @@
 .footer__phone{
     font-size: rem(21px);
 }
-.phone::before{
+.link__phone::before{
+    stroke: #0f5a47;
     content: url(./../icons/phone.svg);
     top: 0;
     left: 0;

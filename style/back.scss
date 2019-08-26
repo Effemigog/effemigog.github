@@ -1,5 +1,4 @@
 .title{
-    position: relative;
     background: url(./../image/back.jpg) 100% 100% no-repeat;
     background-size: cover;
     background-color: #61c4d9;
@@ -11,12 +10,14 @@
         background-position: 70%
     }
 }
-.title::after{
+.title-container{
+   position: relative;
+ }
+.title-container::after{
    content: url(./../image/back2.png);
    position: absolute;
    display: block;
-   top: 18%;
-   right: 15%;
-   bottom: 0;
+   top: 0;
+   right: 0;
    z-index: -1;   
 }

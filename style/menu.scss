@@ -4,20 +4,20 @@
 }
 .menu{
     display: flex;
-    position: relative;
+    justify-content: space-between;
 }
-.accordion{
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
+.menu__block{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
 }
 .menu__title{
     font-size: rem(48px);
     font-weight: bold;
     text-transform: uppercase;
-    padding: rem(100px) 0 0 rem(260px);
 }
 .menu__block{
-    width: 30%
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
 }

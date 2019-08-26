@@ -6,6 +6,7 @@
 }   
 .accordion{
     width: 65%;
+    min-height: 100%;
     display: flex;
     justify-content: flex-end;
 }
@@ -27,11 +28,6 @@
 .accordion__title-berry{
     background: url(./../image/menu-berry.jpg) center center no-repeat;
     background-size: cover;
-}
-.accordion__desc-milk:hover .accordion__text-milk{
-    width: 30%;
-    height: 100%;
-    padding-left: 2%;
 }
 .accordion__text{
     height: 0;

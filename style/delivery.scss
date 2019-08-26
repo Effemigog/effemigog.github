@@ -1,5 +1,5 @@
 .delivery-section{
-    padding-top: rem(90px);
+    padding-bottom: 10%;
     background: url(./../image/elivery-pattern.png) center center/cover no-repeat;
 }
 .delivery__title{
@@ -12,6 +12,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.delivery-section{
+    padding-top: 40px;
 }
 .delivery{
     padding-top: rem(30px);

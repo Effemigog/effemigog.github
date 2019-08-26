@@ -21,6 +21,7 @@
 }
 .team__list{
     display: flex;
+    justify-content: space-between;
 
     @include tablets{
         flex-wrap: wrap;
@@ -28,40 +29,40 @@
     }
 }
 .team__item{
-    padding-right: rem(25px);
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 4 - 25px);
     text-align: center;
+    align-items: center;
 
     @include tablets{
-        width: 35%;
+        width: calc(100% / 2 - 25px);
         padding-bottom: 1%; 
+    }
+
+    @include phones{
+        width: 50%;
     }
 }
 .team__pic{
-    max-width: rem(220px);
-    max-height: rem(290px);
-    padding-bottom: 6%;
+    width: rem(220px);
+    height: rem(240px);
+    padding-bottom: 15%;
+
+    @include phones{
+        
+    }
 }
 .team__img{
-    min-width: width 100%;
+    max-width: 100%;
+
+    @include phones{
+        max-width: 80%;
+    }
 }
 .team__name{
     padding-top: rem(25px);
     font-size: rem(20px);
-    position: relative;
-}
-.team__name::after{
-    position: absolute;
-    content: "";
-    bottom: 10%;
-    right: 10%;
-    width: 0;
-    height: 0;
-    border-left: rem(5px) solid transparent;
-    border-right: rem(5px) solid transparent;
-    border-top: rem(10px) solid #0f5a47;
-}
-.team__desc:hover .team__name::after{
-    display: none;
 }
 .team__position{
     padding-top: rem(20px);
@@ -75,21 +76,4 @@
     padding-top: rem(5px);
     font-size: rem(18px);
     color: #666666;
-}
-.team__desc:hover .team__hover{
-    height: 100%;
-}
-.team__hover-name{
-    position: relative;
-}
-.team__desc:hover .team__hover-name::after{
-    position: absolute;
-    content: "";
-    bottom: 10%;
-    right: 10%;
-    width: 0;
-    height: 0;
-    border-left: rem(5px) solid transparent;
-    border-right: rem(5px) solid transparent;
-    border-bottom: rem(10px) solid #0f5a47;
 }

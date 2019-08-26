@@ -17,6 +17,10 @@
     align-items: center;
     color: #fff;
     width: calc(100% / 3 - 45px);
+
+    @include phones{
+        width: 100%;
+    }
 }
 .icon__pic{
     padding-right: rem(10px);
