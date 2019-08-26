@@ -1,0 +1,21 @@
+.delivery-section{
+    padding-bottom: 10%;
+    background: url(./../image/elivery-pattern.png) center center/cover no-repeat;
+}
+.delivery__title{
+    text-transform: uppercase;
+    font-size: rem(48px);
+    font-weight: bold;
+    color: #0f5a47;
+}
+.delivery-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.delivery-section{
+    padding-top: 40px;
+}
+.delivery{
+    padding-top: rem(30px);
+}
