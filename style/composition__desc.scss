@@ -1,0 +1,36 @@
+.composition__title{
+    padding-top: 40px;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.composition__desc{
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #666666;
+}
+.composition__text{
+    flex: 80% 0;
+    padding-bottom: 50px;
+
+}
+.total{
+    padding-top: 35px;
+    display: flex;
+    & .total__price{
+        font-size: 60px;
+        padding-right: 30px;
+    }
+}
+.weight{
+    padding-left: 50px;
+    & p{
+        font-weight: bold;
+    }
+}
+.calorie{
+    & p{
+        font-weight: bold;
+    }
+}

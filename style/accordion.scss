@@ -6,13 +6,14 @@
 }   
 .accordion{
     width: 65%;
-    min-height: 100%;
     display: flex;
     justify-content: flex-end;
+    min-height: 100%;
 }
 .accordion__desc{
     display: flex;
     background-color: rgba(57, 60, 62, 0.7);
+    min-height: 100%;
 }
 .accordion__list{
     display: flex;
@@ -33,4 +34,9 @@
     height: 0;
     width: 0;
     overflow: hidden;
+}
+.accordion__text--open{
+    width: 50%;
+    height: 100%;
+    padding-left: 50px;
 }
