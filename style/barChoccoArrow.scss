@@ -1,0 +1,8 @@
+.arrow__img{
+    cursor: pointer;
+}
+.arrow{
+    @include tablets{
+        margin-top: 30%;
+    }
+}

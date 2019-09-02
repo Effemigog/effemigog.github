@@ -1,6 +1,7 @@
 .reviews{
+    margin-bottom: 10%;
     position: relative;
-    margin-top: 70px;
+    margin-top: rem(70px);
     background: url(./../image/revBerry.png) right top no-repeat;
 }
 .reviews::after{
@@ -12,7 +13,7 @@
 .reviews::before{
     position: absolute;
     content: url(./../image/revPattern.png);
-    top: 450px;
+    top: rem(450px);
     left: 0;
 
 }   
@@ -23,6 +24,12 @@
     padding: 40px;
     background: url(./../image/rev4.png) right top no-repeat;
     background-color: #f8faf9;
+
+    @include tablets{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 .rev{
     display: flex;
@@ -31,19 +38,28 @@
 }
 .rev__title{
     font-size: 48px;
-    font-weight: bold;   
+    font-weight: bold;
+    text-transform: uppercase; 
+
+    @include phones{
+        padding: 0 10%;
+    }
 }
 .user__pic{
     width: 260px;
     padding-right: 20px;
 }
-.rev__img{
-    max-width: 100%;
+.user__img{
+    min-width: 100%;
+     
+    @include phones{
+        width: 40%;
+    }
 }
 .rev__desc{
     padding-top: 80px;
-    color: #666666;
     font-size: 18px;
+    color: #666666;
    
 }
 .rev__desc h3{
@@ -54,9 +70,9 @@
 .rev__desc p{
     padding-top: 35px;
 }
-
-.navigation__pic:hover{
-    border: 3px solid darkgreen;
-    box-sizing: border-box;
+.user__desc{
+    @include tablets{
+        padding: 0 15%;
+    }
 }
 

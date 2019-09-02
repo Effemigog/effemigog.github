@@ -3,30 +3,62 @@
     justify-content: space-between;
     align-items: center;
 }
+.nav {
+    @include tablets{
+        width: rem(25px);
+        border-bottom: 3px solid #fff;
+        border-radius: 1px;
+        position: relative;
+        cursor: pointer;
+    }
+	
+}
+.nav::after{
+    @include tablets{
+    position: absolute;
+    content: "";
+    width: rem(25px);
+    border-bottom: 3px solid #fff;
+    border-radius: 1px;
+    bottom: 5px;
+    }
+}
+.nav::before{
+    @include tablets{
+    position: absolute;
+    content: "";
+    top: rem(24px);
+    width: rem(25px);
+    border-bottom: 3px solid #fff;
+    border-radius: 1px;
+    }
+}
 .nav__list{
-    padding-top: 17px;
+    padding-top: rem(17px);
     display: flex;
     min-width: 100%;
 }
 .nav__item{
-    padding-right: 24px;
-    font-size: 18px;
+    padding-right: rem(24px);
+    font-size: rem(18px);
+
+    @include tablets{
+        display: none;
+    }
 }
 .logo{
-    padding-top: 20px;
+    padding-top: rem(20px);
 }
 .phone__link{
-    font-size: 24px;
+    font-size: rem(24px);
     color: #fff;
 }
 .nav__link{
     color: #fff;
 }
-.phone::before{
+.phone__link::before{
     content: url(./../image/phone_.png);
     top: 0;
     left: 0;
 }
-.phone{
-    padding-top: 10px;
-}
+

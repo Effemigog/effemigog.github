@@ -1,6 +1,6 @@
 
 .rev-navigation{
-    padding-top: 60px;
+    padding-top: rem(60px);
     display: flex;
     justify-content: center;
 }
@@ -9,8 +9,8 @@
     border-radius: 50%;
 }
 .navigation__pic{
-    width: 75px;
-    height: 75px;
+    width: rem(75px);
+    height: rem(75px);
     border-radius: 50%;
    
 }
@@ -18,5 +18,11 @@
     display: flex;
 }
 .navigation__item{
-    padding-right: 20px;   
+    padding-right: rem(20px);   
 }
+
+.navigation__pic:hover{
+    border: rem(4px) solid darkgreen;
+    box-sizing: border-box;
+}
+
