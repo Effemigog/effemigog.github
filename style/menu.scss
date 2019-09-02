@@ -18,7 +18,11 @@
     text-transform: uppercase;
 }
 .menu__block{
-    width: 45%;
+    width: 30%;
     display: flex;
     justify-content: flex-end;
+
+    @include tablets{
+        width: 40%;
+    }
 }

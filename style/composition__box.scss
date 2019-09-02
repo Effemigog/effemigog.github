@@ -3,13 +3,17 @@
 }
 .barChocco__pic{
     padding-right: rem(70px);
-
+    width: 100%;
     @include tablets{
         padding: 0;
     }
 }
 .barChocco__img{
     max-width: 100%;
+
+    @include phones{
+        max-width: 75%;
+    }
 }
 .composition__pic{
     width: rem(50px);

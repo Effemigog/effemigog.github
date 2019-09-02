@@ -464,6 +464,10 @@ a {
     .prev__title {
       padding: 0 23%;
       text-align: center; } }
+  @media screen and (max-width: 480px) {
+    .prev__title {
+      text-align: center;
+      padding: 0; } }
 
 .prev__text {
   font-size: 1.3125rem;
@@ -931,7 +935,7 @@ a {
   max-width: 100%; }
   @media screen and (max-width: 480px) {
     .team__img {
-      max-width: 80%; } }
+      max-width: 75%; } }
 
 .team__name {
   padding-top: 1.5625rem;
@@ -978,13 +982,16 @@ a {
   text-transform: uppercase; }
 
 .menu__block {
-  width: 45%;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end; }
+  @media screen and (max-width: 768px) {
+    .menu__block {
+      width: 40%; } }
 
 .map-section {
   position: relative; }
@@ -1350,13 +1357,17 @@ a {
   display: flex; }
 
 .barChocco__pic {
-  padding-right: 4.375rem; }
+  padding-right: 4.375rem;
+  width: 100%; }
   @media screen and (max-width: 768px) {
     .barChocco__pic {
       padding: 0; } }
 
 .barChocco__img {
   max-width: 100%; }
+  @media screen and (max-width: 480px) {
+    .barChocco__img {
+      max-width: 75%; } }
 
 .composition__pic {
   width: 3.125rem;
