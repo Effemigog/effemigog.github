@@ -38,6 +38,10 @@
     border-radius: 50%;
     fill: transparent;
     stroke: #000;
+
+    @include phones{
+        width: rem(150px);
+    }
 }
 .main__title{
     padding-top: rem(35px);

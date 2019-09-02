@@ -1,8 +1,12 @@
 .barChocco-container{
     display: flex;
-    margin-top: 70px;
+    margin-top: rem(70px);
     justify-content: center;
     align-items: center;
+
+    @include tablets{
+        align-items: start;
+    }
 }
 
 .barChocco{
@@ -10,6 +14,9 @@
 
     @include tablets{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
     }
 }
 

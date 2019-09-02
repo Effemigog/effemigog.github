@@ -1,5 +1,6 @@
 .section__content {
   margin-top: rem(86px);
+  
 
   @include tablets {
     display: flex;
@@ -7,6 +8,7 @@
     align-items: center;
     text-align: center;
     padding-top: 30rem;
+    text-align: center;
   }
 }
 .content__prev {

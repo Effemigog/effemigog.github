@@ -5,10 +5,17 @@
     min-height: 100%;
 }   
 .accordion{
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 65%;
     display: flex;
     justify-content: flex-end;
     min-height: 100%;
+
+    @include phones{
+        width: 100%;
+    }
 }
 .accordion__desc{
     display: flex;
@@ -39,4 +46,8 @@
     width: 50%;
     height: 100%;
     padding-left: 50px;
+
+    @include phones{
+        width: 100%;
+    }
 }

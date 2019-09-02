@@ -20,7 +20,7 @@
                     <div class="logo">
                         <img src="./image/CHOCCO.png" alt="logo" class="logo__img">
                     </div>
-                    <nav class="nav">
+                    <nav class="nav" id="fullscreenMenuBtn">
                         <ul class="nav__list">
                             <li class="nav__item">
                                 <a href="#whyChocco" class="nav__link"> О нас</a>
@@ -50,6 +50,19 @@
                 </div>
             </header>
             <div class="container title-container">
+                <div class="fullscreen-menu" id="fullscreenMenu">
+                    <div class="fullscreen-menu-container">
+                        <ul class="fullscreen-menu__list">
+                            <li class="menu__item"><a href="#" class="menu__link">O нас</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Батончики</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Команда</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Меню</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Как мы работаем</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="left__block">
                     <div class="section__content">
                         <div class="content__prev">
@@ -234,8 +247,10 @@
                         <div class="composition__desc">
                             <p class="composition__text">Гранола из морских водорослей с овсом, миндалем и тыквенными
                                 семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
-                            <div class="calorie">Калорийность<p>120 ккал</p></div>
-                            <div class="weight">Вес<p>98 грамм</p></div>
+                            <div class="calorie">Калорийность<p>120 ккал</p>
+                            </div>
+                            <div class="weight">Вес<p>98 грамм</p>
+                            </div>
                         </div>
                         <div class="total">
                             <p class="total__price">140 &#8381</p>
@@ -355,8 +370,8 @@
                             </div>
                         </li>
                         <li class="accordion__item">
-                            <div class="accordion__desc" id="berry">
-                                <h3 class="accordion__title accordion__title-berry">Дикие ягоды</h3>
+                            <div class="accordion__desc">
+                                <h3 id="berry" class="accordion__title accordion__title-berry">Дикие ягоды</h3>
                                 <p class="accordion__text" id="berryOpen">Рекомендуем употреблять батончики вместе с
                                     кокосовым или
                                     миндальным молоком. Так и вкуснее, и полезнее.
@@ -562,6 +577,7 @@
         </section>
     </div>
     </div>
+    <script src="./Script.js"></script>
 </body>
 
 </html>

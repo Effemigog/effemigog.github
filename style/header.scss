@@ -5,7 +5,7 @@
 }
 .nav {
     @include tablets{
-        width: 25px;
+        width: rem(25px);
         border-bottom: 3px solid #fff;
         border-radius: 1px;
         position: relative;
@@ -17,7 +17,7 @@
     @include tablets{
     position: absolute;
     content: "";
-    width: 25px;
+    width: rem(25px);
     border-bottom: 3px solid #fff;
     border-radius: 1px;
     bottom: 5px;
@@ -27,8 +27,8 @@
     @include tablets{
     position: absolute;
     content: "";
-    top: 24px;
-    width: 25px;
+    top: rem(24px);
+    width: rem(25px);
     border-bottom: 3px solid #fff;
     border-radius: 1px;
     }
