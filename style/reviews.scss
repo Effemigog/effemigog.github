@@ -13,7 +13,7 @@
 .reviews::before{
     position: absolute;
     content: url(./../image/revPattern.png);
-    top: 450px;
+    top: rem(450px);
     left: 0;
 
 }   

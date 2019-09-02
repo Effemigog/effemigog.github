@@ -1,38 +1,51 @@
 .composition__box{
     display: flex;
-    position: relative;
 }
 .barChocco__pic{
-    padding-right: 70px;
-
+    padding-right: rem(70px);
+    width: 100%;
     @include tablets{
         padding: 0;
     }
 }
+.barChocco__img{
+    max-width: 100%;
+
+    @include phones{
+        max-width: 75%;
+    }
+}
 .composition__pic{
-    width: 50px;
-    height: 50px;
+    width: rem(50px);
+    height: rem(50px);
     fill: #fff;
 }
 .consist{
     color: #fff;
 }
 .composition__icon{
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background-color: #61c4d9;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include tablets{
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
 }
 .item__pic{
-    width: 25px;
-    height: 35px;
-    padding-right: 30px;
+    width: rem(25px);
+    height: rem(35px);
+    padding-right: rem(30px);
 }
 .ingredients{
-    padding-right: 40px;
+    padding-right: rem(40px);
     flex: 1;
 }
 .composition__item{
@@ -40,10 +53,9 @@
 }
 .composition__list{
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 25px 20px 25px 35px;
+    padding: rem(25px) rem(20px) rem(25px) rem(35px);
     position: absolute;
     content: "";
-    top: 0;
-    right: 2%;
+    right: 20%;
     display: none;
 }
