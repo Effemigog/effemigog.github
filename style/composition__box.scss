@@ -31,6 +31,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     @include tablets{
         position: absolute;
@@ -46,7 +47,7 @@
 }
 .ingredients{
     padding-right: rem(40px);
-    flex: 1;
+   
 }
 .composition__item{
     display: flex;
@@ -56,6 +57,10 @@
     padding: rem(25px) rem(20px) rem(25px) rem(35px);
     position: absolute;
     content: "";
-    right: 20%;
+    right: 26%;
     display: none;
+
+    &-open{
+        display: block;
+    }
 }

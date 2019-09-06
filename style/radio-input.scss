@@ -36,6 +36,7 @@
     border-color: #0f5a47;
 }
 .radio__square{
+    position: relative;
     -webkit-appearance: none;
     width: rem(20px);
     height: rem(20px);
@@ -45,6 +46,10 @@
     background-color: #fff;
 }
 .radio__square:checked::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
     content: "\2713";
     text-shadow: rem(1px) rem(1px) rem(1px) rgba(0, 0, 0, .2);
     font-size: rem(15px);

@@ -20,7 +20,7 @@
                     <div class="logo">
                         <img src="./image/CHOCCO.png" alt="logo" class="logo__img">
                     </div>
-                    <nav class="nav" id="fullscreenMenuBtn">
+                    <nav class="nav">
                         <ul class="nav__list">
                             <li class="nav__item">
                                 <a href="#whyChocco" class="nav__link"> О нас</a>
@@ -47,6 +47,7 @@
                             </li>
                         </ul>
                     </nav>
+                    <div class="fullscreen__btn" id="fullscreenMenuBtn"></div>
                 </div>
             </header>
             <div class="container title-container">
@@ -177,84 +178,164 @@
                         <img src="image/arrow-scroll.png" alt="" class="arrow__img">
                     </div>
                 </div>
-                <div class="barChocco">
-                    <div class="barChocco__pic">
-                        <img src="./image/backBarChocco.jpg" alt="" class="barChocco__img">
+                <div class="slide">
+                    <div class="barChocco">
+                        <div class="barChocco__pic">
+                            <img src="./image/batWater.png" alt="" class="barChocco__img">
+                        </div>
+                        <div class="barChocco__main">
+                            <div class="composition__box">
+                                <div class="composition__icon" id="iconBtn">
+                                    <svg class="composition__pic">
+                                        <use xlink:href="sprite.svg#chocolate-bar"></use>
+                                    </svg>
+                                    <p class="consist">состав</p>
+                                </div>
+                                <div class="list__box">
+                                    <ul class="composition__list" id="listComposotionOpen">
+                                        <li class="composition__item">
+                                            <svg class="item__pic">
+                                                <use xlink:href="sprite.svg#oat"></use>
+                                            </svg>
+                                            <p class="ingredients">Овёс</p>
+                                            <p class="conposition__weigdth">25 г</p>
+                                        </li>
+                                        <li class="composition__item">
+                                            <svg class="item__pic">
+                                                <use xlink:href="sprite.svg#seaweed"></use>
+                                            </svg>
+                                            <p class="ingredients">Мор.водоросли</p>
+                                            <p class="conposition__weigdth">15 г</p>
+                                        </li>
+                                        <li class="composition__item">
+                                            <svg class="item__pic">
+                                                <use xlink:href="sprite.svg#almond2"></use>
+                                            </svg>
+                                            <p class="ingredients">Миндаль</p>
+                                            <p class="conposition__weigdth">20 г</p>
+                                        </li>
+                                        <li class="composition__item">
+                                            <svg class="item__pic">
+                                                <use xlink:href="sprite.svg#washing-powder"></use>
+                                            </svg>
+                                            <p class="ingredients">Сухое молоко</p>
+                                            <p class="conposition__weigdth">10 г</p>
+                                        </li>
+                                        <li class="composition__item">
+                                            <svg class="item__pic">
+                                                <use xlink:href="sprite.svg#seeds"></use>
+                                            </svg>
+                                            <p class="ingredients">Тыкв.семечки</p>
+                                            <p class="conposition__weigdth">20 г</p>
+                                        </li>
+                                        <li class="composition__item">
+                                            <svg class="item__pic">
+                                                <use xlink:href="sprite.svg#apitherapy"></use>
+                                            </svg>
+                                            <p class="ingredients">Зам.сахара</p>
+                                            <p class="conposition__weigdth">4 г</p>
+                                        </li>
+                                        <li class="composition__item">
+                                            <svg class="item__pic">
+                                                <use xlink:href="sprite.svg#beans"></use>
+                                            </svg>
+                                            <p class="ingredients">Какао бобы</p>
+                                            <p class="conposition__weigdth">4 г</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2 class="composition__title">батончики "морские водоросли"</h2>
+                            <div class="composition__desc">
+                                <p class="composition__text">Гранола из морских водорослей с овсом, миндалем и
+                                    тыквенными
+                                    семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
+                                <div class="calorie">Калорийность<p>120 ккал</p>
+                                </div>
+                                <div class="weight">Вес<p>98 грамм</p>
+                                </div>
+                            </div>
+                            <div class="total">
+                                <p class="total__price">140 &#8381</p>
+                                <button class="button delivery__button" type="button">Заказать</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="barChocco__main">
-                        <div class="composition__box">
-                            <div class="composition__icon">
-                                <svg class="composition__pic">
-                                    <use xlink:href="sprite.svg#chocolate-bar"></use>
-                                </svg>
-                                <p class="consist">состав</p>
-                            </div>
-                            <div class="list__box">
-                                <ul class="composition__list">
-                                    <li class="composition__item">
-                                        <svg class="item__pic">
-                                            <use xlink:href="sprite.svg#oat"></use>
-                                        </svg>
-                                        <p class="ingredients">Овёс</p>
-                                        <p class="conposition__weigdth">25 г</p>
-                                    </li>
-                                    <li class="composition__item">
-                                        <svg class="item__pic">
-                                            <use xlink:href="sprite.svg#seaweed"></use>
-                                        </svg>
-                                        <p class="ingredients">Мор.водоросли</p>
-                                        <p class="conposition__weigdth">15 г</p>
-                                    </li>
-                                    <li class="composition__item">
-                                        <svg class="item__pic">
-                                            <use xlink:href="sprite.svg#almond2"></use>
-                                        </svg>
-                                        <p class="ingredients">Миндаль</p>
-                                        <p class="conposition__weigdth">20 г</p>
-                                    </li>
-                                    <li class="composition__item">
-                                        <svg class="item__pic">
-                                            <use xlink:href="sprite.svg#washing-powder"></use>
-                                        </svg>
-                                        <p class="ingredients">Сухое молоко</p>
-                                        <p class="conposition__weigdth">10 г</p>
-                                    </li>
-                                    <li class="composition__item">
-                                        <svg class="item__pic">
-                                            <use xlink:href="sprite.svg#seeds"></use>
-                                        </svg>
-                                        <p class="ingredients">Тыкв.семечки</p>
-                                        <p class="conposition__weigdth">20 г</p>
-                                    </li>
-                                    <li class="composition__item">
-                                        <svg class="item__pic">
-                                            <use xlink:href="sprite.svg#apitherapy"></use>
-                                        </svg>
-                                        <p class="ingredients">Зам.сахара</p>
-                                        <p class="conposition__weigdth">4 г</p>
-                                    </li>
-                                    <li class="composition__item">
-                                        <svg class="item__pic">
-                                            <use xlink:href="sprite.svg#beans"></use>
-                                        </svg>
-                                        <p class="ingredients">Какао бобы</p>
-                                        <p class="conposition__weigdth">4 г</p>
-                                    </li>
-                                </ul>
-                            </div>
+                </div>
+                <div class="slide-open">
+                    <div class="barChocco">
+                        <div class="barChocco__pic">
+                            <img src="./image/batGrape.png" alt="" class="barChocco__img">
                         </div>
-                        <h2 class="composition__title">батончики "морские водоросли"</h2>
-                        <div class="composition__desc">
-                            <p class="composition__text">Гранола из морских водорослей с овсом, миндалем и тыквенными
-                                семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
-                            <div class="calorie">Калорийность<p>120 ккал</p>
+                        <div class="barChocco__main">
+                            <div class="composition__box">
+                                <div class="composition__icon" id="iconBtn2">
+                                    <svg class="composition__pic">
+                                        <use xlink:href="sprite.svg#chocolate-bar"></use>
+                                    </svg>
+                                    <p class="consist">состав</p>
+                                </div>
+                                <div class="list__box">
+                                    <ul class="composition__list" id="listComposotionOpen2">
+                                        <li class="composition__item">
+                                            <svg class="item__pic">
+                                                <use xlink:href="sprite.svg#grape"></use>
+                                            </svg>
+                                            <p class="ingredients">Виноград</p>
+                                            <p class="conposition__weigdth">25 г</p>
+                                        </li>
+                                        <li class="composition__item">
+                                            <svg class="item__pic">
+                                                <use xlink:href="sprite.svg#nut"></use>
+                                            </svg>
+                                            <p class="ingredients">Грецкий ореx</p>
+                                            <p class="conposition__weigdth">32 г</p>
+                                        </li>
+                                        <li class="composition__item">
+                                            <svg class="item__pic">
+                                                <use xlink:href="sprite.svg#seeds"></use>
+                                            </svg>
+                                            <p class="ingredients">Кунжутное семя</p>
+                                            <p class="conposition__weigdth">20 г</p>
+                                        </li>
+                                        <li class="composition__item">
+                                            <svg class="item__pic">
+                                                <use xlink:href="sprite.svg#washing-powder"></use>
+                                            </svg>
+                                            <p class="ingredients">Сухое молоко</p>
+                                            <p class="conposition__weigdth">10 г</p>
+                                        </li>
+                                        <li class="composition__item">
+                                            <svg class="item__pic">
+                                                <use xlink:href="sprite.svg#apitherapy"></use>
+                                            </svg>
+                                            <p class="ingredients">Зам.сахара</p>
+                                            <p class="conposition__weigdth">4 г</p>
+                                        </li>
+                                        <li class="composition__item">
+                                            <svg class="item__pic">
+                                                <use xlink:href="sprite.svg#beans"></use>
+                                            </svg>
+                                            <p class="ingredients">Какао бобы</p>
+                                            <p class="conposition__weigdth">4 г</p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="weight">Вес<p>98 грамм</p>
+                            <h2 class="composition__title">батончики "морские водоросли"</h2>
+                            <div class="composition__desc">
+                                <p class="composition__text">Гранола из морских водорослей с овсом, миндалем и
+                                    тыквенными
+                                    семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
+                                <div class="calorie">Калорийность<p>110 ккал</p>
+                                </div>
+                                <div class="weight">Вес<p>95 грамм</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="total">
-                            <p class="total__price">140 &#8381</p>
-                            <button class="button delivery__button" type="button">Заказать</button>
+                            <div class="total">
+                                <p class="total__price">140 &#8381</p>
+                                <button class="button delivery__button" type="button">Заказать</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -277,10 +358,11 @@
                                 </div>
                                 <div class="team__desc">
                                     <div class="team__hover-name">
-                                        <p class="team__name">Борис Федорович
-                                            <img src="./image/Polygon_.png" alt="" class="team__poligon"></p>
+                                        <p class="team__name" id="boris">Борис Федорович
+                                            <img src="./image/Polygon_.png" alt="" id="borisPol" class="team__poligon">
+                                        </p>
                                     </div>
-                                    <div class="team__hover">
+                                    <div class="team__hover" id="borisOpen">
                                         <p class="team__position">Главный технолог</p>
                                         <p class="team__text">Отвечает за вкусовые качества и калорийность</p>
                                     </div>
@@ -292,10 +374,10 @@
                                 </div>
                                 <div class="team__desc">
                                     <div class="team__hover-name">
-                                        <p class="team__name">Алла Ивановна <img src="./image/Polygon_.png" alt=""
-                                                class="team__poligon"></p>
+                                        <p class="team__name" id="alla">Алла Ивановна <img src="./image/Polygon_.png"
+                                                id="allaPol" alt="" class="team__poligon"></p>
                                     </div>
-                                    <div class="team__hover">
+                                    <div class="team__hover" id="allaOpen">
                                         <p class="team__position">Специалист по упаковке</p>
                                         <p class="team__text">Автор запоминающегося стиля наших батончиков</p>
                                     </div>
@@ -307,10 +389,10 @@
                                 </div>
                                 <div class="team__desc">
                                     <div class="team__hover-name">
-                                        <p class="team__name">Кирилл Матросов <img src="./image/Polygon_.png" alt=""
-                                                class="team__poligon"></p>
+                                        <p class="team__name" id="cir">Кирилл Матросов <img id="cirPol"
+                                                src="./image/Polygon_.png" alt="" class="team__poligon"></p>
                                     </div>
-                                    <div class="team__hover">
+                                    <div class="team__hover" id="cirOpen">
                                         <p class="team__position">Оператор</p>
                                         <p class="team__text">С радостью поможет подобрать батончики и оформить заказ
                                         </p>
@@ -323,10 +405,10 @@
                                 </div>
                                 <div class="team__desc">
                                     <div class="team__hover-name">
-                                        <p class="team__name">Мила Рыжкова <img src="./image/Polygon_.png" alt=""
-                                                class="team__poligon"></p>
+                                        <p class="team__name" id="mila">Мила Рыжкова <img id="milaPol"
+                                                src="./image/Polygon_.png" alt="" class="team__poligon"></p>
                                     </div>
-                                    <div class="team__hover">
+                                    <div class="team__hover" id="milaOpen">
                                         <p class="team__position">PR, маркетинг</p>
                                         <p class="team__text">По всем вопросам сотрудничества и рекламы писать только
                                             Миле</p>
@@ -348,7 +430,7 @@
                         <li class="accordion__item">
                             <div class="accordion__desc" id="milk">
                                 <h3 class="accordion__title accordion__title-milk"">Батончики с молоком</h3>
-                                <p class=" accordion__text" id="milkOpen">Рекомендуем употреблять батончики вместе
+                                <p class="accordion__text" id="milkOpen">Рекомендуем употреблять батончики вместе
                                     с кокосовым или
                                     миндальным молоком. Так и вкуснее, и полезнее.
                                     Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех
@@ -393,7 +475,7 @@
                     </div>
                     <div class="rev__desc">
                         <ul class="rev__list">
-                            <li class="rev__item rev__item-one">
+                            <li class="rev__item" id="alena">
                                 <div class="user__pic">
                                     <img src="./image/revPhoto-1.jpg" alt="masha" class="user__img">
                                 </div>
@@ -408,7 +490,7 @@
                                     <p>Алена Хмельницкая</p>
                                 </div>
                             </li>
-                            <li class="rev__item">
+                            <li class="rev__item rev__item-active" id="vadim">
                                 <div class="user__pic">
                                     <img src="./image/revPhoto-3.jpg" alt="masha" class="user__img">
                                 </div>
@@ -421,7 +503,7 @@
                                     <p>Вадим Грачев</p>
                                 </div>
                             </li>
-                            <li class="rev__item">
+                            <li class="rev__item" id="masha">
                                 <div class="user__pic">
                                     <img src="./image/revPhoto-2.jpg" alt="masha" class="user__img">
                                 </div>
@@ -440,21 +522,21 @@
                 </div>
                 <div class="rev-navigation">
                     <ul class="navigation__list">
-                        <li class="navigation__item">
+                        <li class="navigation__item" id="alenaOpen">
                             <div class="navigation__pic">
                                 <a href="#" class="navigation__link"><img src="./image/revPhoto-1.jpg" alt=""
                                         class="navigation__img"></a>
                             </div>
                         </li>
-                        <li class="navigation__item">
+                        <li class="navigation__item" id="vadimOpen">
                             <div class="navigation__pic">
-                                <a href="#" class="navigation__link"><img src="./image/revPhoto-2.jpg" alt=""
+                                <a href="#" class="navigation__link"><img src="./image/revPhoto-3.jpg" alt=""
                                         class="navigation__img"></a>
                             </div>
                         </li>
-                        <li class="navigation__item">
+                        <li class="navigation__item" id="mashaOpen">
                             <div class="navigation__pic">
-                                <a href="#" class="navigation__link"><img src="./image/revPhoto-3.jpg" alt=""
+                                <a href="#" class="navigation__link"><img src="./image/revPhoto-2.jpg" alt=""
                                         class="navigation__img"></a>
                             </div>
                         </li>
@@ -466,62 +548,68 @@
             <div class="container delivery-container">
                 <h2 class="delivery__title">закажите доставку</h2>
                 <div class="deliveri">
-                    <form class="delivery__form">
+                    <form class="delivery__form" id="form">
                         <div class="form__column">
                             <div class="form__row">
                                 <label for="" class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" name="name" required>
+                                    <div class="error"></div>
                                 </label>
                                 <label for="" class="form__block">
                                     <div class="form__title">Телефон</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" name="phone" id="phone" required>
+                                    <div class="error"></div>
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label for="" class="form__block">
                                     <div class="form__title">Улица</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" name="street" required>
+                                    <div class="error"></div>
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label for="" class="form__block">
                                     <div class="form__title">Дом</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" name="home" required>
+                                    <div class="error"></div>
                                 </label>
                                 <label for="" class="form__block">
                                     <div class="form__title">Корпус</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" name="body" required>
+                                    <div class="error"></div>
                                 </label>
                                 <label for="" class="form__block">
                                     <div class="form__title">Квартира</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" name="apartment" required>
+                                    <div class="error"></div>
                                 </label>
                                 <label for="" class="form__block">
                                     <div class="form__title">Этаж</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" name="floor" required>
+                                    <div class="error"></div>
                                 </label>
                             </div>
                         </div>
                         <div class="form__column">
                             <div class="form__row form__row--textarea">
                                 <label for="form__block">Комментарий</label>
-                                <textarea class="form__textarea form__textarea--textarea" name="" id="" cols="30"
+                                <textarea class="form__textarea form__textarea--textarea" required name="comment" id="" cols="30"
                                     rows="10"></textarea>
+                                    <div class="error"></div>
                             </div>
                             <div class="form__row form__row--radio">
                                 <label for="pay" class="form__block form__block--radio">
-                                    <input id="pay" type="radio" class="radio__input">Потребуется сдача
-                                    <input id="pay" type="radio" class="radio__input">Оплата по карте
+                                    <input name="pay" type="radio" class="radio__input" required>Потребуется сдача
+                                    <input name="pay" type="radio" class="radio__input" required>Оплата по карте
                                 </label>
                                 <label for="notCall" class="form__block form__block--square">
                                     <input id="notCall" type="checkbox" class="radio__square">Не перезванивать
                                 </label>
                             </div>
-                            <div class="form__row form__row--btn">
-                                <button class="button delivery__button" type="button">Заказать</button>
+                                <button class="button delivery__button" id="btnForm" type="button">Заказать</button>
                                 <button class="button clear__button" type="reset">Очистить</button>
-                            </div>
                         </div>
                     </form>
                 </div>

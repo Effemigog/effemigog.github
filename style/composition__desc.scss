@@ -27,13 +27,13 @@
     }
 }
 .composition__text{
-    flex: 80% 0;
+    flex: 81% 0;
     padding-bottom: rem(50px);
 
     @include tablets{
         
         text-align: center;
-        padding-left: 7%;
+        flex: 100%
     }
 
 }
@@ -54,5 +54,15 @@
 .calorie{
     & p{
         font-weight: bold;
+    }
+}
+.barChocco{
+    display: flex;
+}
+.slide{
+    display: none;
+
+    &-open{
+        display: block;
     }
 }

@@ -1,6 +1,4 @@
-.team-section{
-    padding-top: rem(75px);
-}
+
 .team-section::after{
     content: url(./../image/team-berry.png);
     bottom: 0;
@@ -46,12 +44,7 @@
 }
 .team__pic{
     width: rem(220px);
-    height: rem(240px);
-    padding-bottom: 15%;
 
-    @include phones{
-        
-    }
 }
 .team__img{
     max-width: 100%;
@@ -71,6 +64,21 @@
 .team__hover{
     height: 0;
     overflow: hidden;
+    opacity: 0;
+    display: none;
+}
+.team__hover-active + .team__hover{
+    display: block;
+    opacity: 1;
+    height: 100%;
+    transition: 0.4s;
+}
+.team__poligon{
+    cursor: pointer;
+    &-active{
+        transform: rotate(180deg);
+        transition: 0.4s;
+    }
 }
 .team__text{
     padding-top: rem(5px);

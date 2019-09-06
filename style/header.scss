@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.nav {
+.fullscreen__btn {
     @include tablets{
         width: rem(25px);
         border-bottom: 3px solid #fff;
@@ -13,7 +13,7 @@
     }
 	
 }
-.nav::after{
+.fullscreen__btn::after{
     @include tablets{
     position: absolute;
     content: "";
@@ -23,11 +23,11 @@
     bottom: 5px;
     }
 }
-.nav::before{
+.fullscreen__btn::before{
     @include tablets{
     position: absolute;
     content: "";
-    top: rem(24px);
+    top: 0.6rem;
     width: rem(25px);
     border-bottom: 3px solid #fff;
     border-radius: 1px;

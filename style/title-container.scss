@@ -1,7 +1,11 @@
 .title-container{
     display: flex;
     justify-content: space-between;
-    z-index: 1;
+
+    @include tablets{
+        align-items: flex-end;
+    }
+    
 }
 .left__block{
     width: 55%;

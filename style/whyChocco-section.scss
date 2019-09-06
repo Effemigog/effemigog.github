@@ -1,11 +1,13 @@
 .whyChocco{
     position: relative;
-    margin-top: rem(120px);
     background: url(./../image/sheet.png) left center no-repeat;
 
     @include phones{
         background: none;
     }
+}
+.container_chocco{
+    margin-top: rem(70px);
 }
 .whyChocco::after{
     position: absolute;

@@ -1,7 +1,5 @@
 .reviews{
-    margin-bottom: 10%;
     position: relative;
-    margin-top: rem(70px);
     background: url(./../image/revBerry.png) right top no-repeat;
 }
 .reviews::after{
@@ -18,12 +16,16 @@
 
 }   
 .rev__item{
-    display: flex;
+    display: none;
     flex-wrap: nowrap;
     flex-direction: row;
-    padding: 40px;
+    padding: rem(40px) rem(40px) 0 rem(40px);
     background: url(./../image/rev4.png) right top no-repeat;
     background-color: #f8faf9;
+
+    &-active{
+        display: flex;
+    }
 
     @include tablets{
         flex-direction: column;
@@ -46,8 +48,8 @@
     }
 }
 .user__pic{
-    width: 260px;
-    padding-right: 20px;
+    width: rem(260px);
+    padding-right: rem(20px);
 }
 .user__img{
     min-width: 100%;
@@ -57,7 +59,6 @@
     }
 }
 .rev__desc{
-    padding-top: 80px;
     font-size: 18px;
     color: #666666;
    
@@ -68,7 +69,7 @@
  
 }
 .rev__desc p{
-    padding-top: 35px;
+    padding-top: rem(35px);
 }
 .user__desc{
     @include tablets{
