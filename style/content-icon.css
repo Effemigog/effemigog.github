@@ -1,6 +1,7 @@
 .content__icon {
   padding-top: 66px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  z-index: 1; }
 
 .icon__list {
   display: -webkit-box;

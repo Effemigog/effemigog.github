@@ -1,0 +1,40 @@
+.fullscreen-menu{
+    position: fixed;
+    display: none;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #333333;
+
+    &-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+    &-active{
+        display: block;
+        opacity: 1;
+        transition: 0.3s;
+    }
+}
+.menu__link{
+    color: #fff;
+    font-size: 36px; 
+}
+.menu__item{
+    padding-bottom: rem(50px);
+}
+.close{
+    width: 100%;
+    text-align: right;
+    padding-right:rem( 20px);
+    color: #fff;
+    font-size: 36px;
+}

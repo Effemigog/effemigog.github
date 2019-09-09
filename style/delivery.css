@@ -1,0 +1,9 @@
+.delivery-section {
+  padding-top: 90px;
+  background: url(./../image/elivery-pattern.png) center center/cover no-repeat; }
+
+.delivery__title {
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: bold;
+  color: #0f5a47; }
