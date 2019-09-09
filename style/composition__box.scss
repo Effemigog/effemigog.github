@@ -4,8 +4,11 @@
 .barChocco__pic{
     padding-right: rem(70px);
     width: 100%;
+
+    
     @include tablets{
         padding: 0;
+        width: 70%;
     }
 }
 .barChocco__img{
@@ -63,4 +66,7 @@
     &-open{
         display: block;
     }
+}
+.arrow__img{
+    cursor: pointer;
 }

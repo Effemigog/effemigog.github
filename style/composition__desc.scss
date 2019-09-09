@@ -56,13 +56,20 @@
         font-weight: bold;
     }
 }
-.barChocco{
+.slide__list{
     display: flex;
+    height: 100%;
+    width: auto;
+    transition: .5s;
 }
 .slide{
-    display: none;
+    height: 100%;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
 
-    &-open{
-        display: block;
+    @include tablets{
+        flex-direction: column;
     }
 }
