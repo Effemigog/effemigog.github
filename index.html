@@ -53,12 +53,13 @@
             <div class="container title-container">
                 <div class="fullscreen-menu" id="fullscreenMenu">
                     <div class="fullscreen-menu-container">
+                        <div class="close" id="close">x</div>
                         <ul class="fullscreen-menu__list">
-                            <li class="menu__item"><a href="#" class="menu__link">O нас</a></li>
+                            <li class="menu__item"><a href="#whyChocco" class="menu__link">O нас</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">Батончики</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Команда</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Меню</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+                            <li class="menu__item"><a href="#team" class="menu__link">Команда</a></li>
+                            <li class="menu__item"><a href="#menu" class="menu__link">Меню</a></li>
+                            <li class="menu__item"><a href="#rev" class="menu__link">Отзывы</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">Как мы работаем</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
                         </ul>
@@ -172,178 +173,178 @@
             </div>
         </section>
         <section class="barChocco-section">
-            <div class="container barChocco-container">
-                <div class="arrow">
-                    <div class="arrow__pic">
-                        <img src="image/arrow-scroll.png" alt="" class="arrow__img">
-                    </div>
+            <div class="arrow__pic" id="left">
+                <img src="image/arrow-scroll.png" alt="" class="arrow__img">
+            </div>
+            <div class="container">
+                <div class="barChocco-container">
+                    <ul class="slide__list" id="sliderList">
+                        <li class="slide">
+                            <div class="barChocco__pic">
+                                <img src="./image/batWater.png" alt="" class="barChocco__img">
+                            </div>
+                            <div class="barChocco__main">
+                                <div class="composition__box">
+                                    <div class="composition__icon" id="iconBtn">
+                                        <svg class="composition__pic">
+                                            <use xlink:href="sprite.svg#chocolate-bar"></use>
+                                        </svg>
+                                        <p class="consist">состав</p>
+                                    </div>
+                                    <div class="list__box">
+                                        <ul class="composition__list" id="listComposotionOpen">
+                                            <li class="composition__item">
+                                                <svg class="item__pic">
+                                                    <use xlink:href="sprite.svg#oat"></use>
+                                                </svg>
+                                                <p class="ingredients">Овёс</p>
+                                                <p class="conposition__weigdth">25 г</p>
+                                            </li>
+                                            <li class="composition__item">
+                                                <svg class="item__pic">
+                                                    <use xlink:href="sprite.svg#seaweed"></use>
+                                                </svg>
+                                                <p class="ingredients">Мор.водоросли</p>
+                                                <p class="conposition__weigdth">15 г</p>
+                                            </li>
+                                            <li class="composition__item">
+                                                <svg class="item__pic">
+                                                    <use xlink:href="sprite.svg#almond2"></use>
+                                                </svg>
+                                                <p class="ingredients">Миндаль</p>
+                                                <p class="conposition__weigdth">20 г</p>
+                                            </li>
+                                            <li class="composition__item">
+                                                <svg class="item__pic">
+                                                    <use xlink:href="sprite.svg#washing-powder"></use>
+                                                </svg>
+                                                <p class="ingredients">Сухое молоко</p>
+                                                <p class="conposition__weigdth">10 г</p>
+                                            </li>
+                                            <li class="composition__item">
+                                                <svg class="item__pic">
+                                                    <use xlink:href="sprite.svg#seeds"></use>
+                                                </svg>
+                                                <p class="ingredients">Тыкв.семечки</p>
+                                                <p class="conposition__weigdth">20 г</p>
+                                            </li>
+                                            <li class="composition__item">
+                                                <svg class="item__pic">
+                                                    <use xlink:href="sprite.svg#apitherapy"></use>
+                                                </svg>
+                                                <p class="ingredients">Зам.сахара</p>
+                                                <p class="conposition__weigdth">4 г</p>
+                                            </li>
+                                            <li class="composition__item">
+                                                <svg class="item__pic">
+                                                    <use xlink:href="sprite.svg#beans"></use>
+                                                </svg>
+                                                <p class="ingredients">Какао бобы</p>
+                                                <p class="conposition__weigdth">4 г</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <h2 class="composition__title">батончики "морские водоросли"</h2>
+                                <div class="composition__desc">
+                                    <p class="composition__text">Гранола из морских водорослей с овсом, миндалем и
+                                        тыквенными
+                                        семечками. В состав также входят: сухое молоко, заменитель сахара и какао
+                                        бобы.
+                                    </p>
+                                    <div class="calorie">Калорийность<p>120 ккал</p>
+                                    </div>
+                                    <div class="weight">Вес<p>98 грамм</p>
+                                    </div>
+                                </div>
+                                <div class="total">
+                                    <p class="total__price">140 &#8381</p>
+                                    <button class="button delivery__button" type="button">Заказать</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="barChocco__pic">
+                                <img src="./image/batGrape.png" alt="" class="barChocco__img">
+                            </div>
+                            <div class="barChocco__main">
+                                <div class="composition__box">
+                                    <div class="composition__icon" id="iconBtn2">
+                                        <svg class="composition__pic">
+                                            <use xlink:href="sprite.svg#chocolate-bar"></use>
+                                        </svg>
+                                        <p class="consist">состав</p>
+                                    </div>
+                                    <div class="list__box">
+                                        <ul class="composition__list" id="listComposotionOpen2">
+                                            <li class="composition__item">
+                                                <svg class="item__pic">
+                                                    <use xlink:href="sprite.svg#grape"></use>
+                                                </svg>
+                                                <p class="ingredients">Виноград</p>
+                                                <p class="conposition__weigdth">25 г</p>
+                                            </li>
+                                            <li class="composition__item">
+                                                <svg class="item__pic">
+                                                    <use xlink:href="sprite.svg#nut"></use>
+                                                </svg>
+                                                <p class="ingredients">Грецкий ореx</p>
+                                                <p class="conposition__weigdth">32 г</p>
+                                            </li>
+                                            <li class="composition__item">
+                                                <svg class="item__pic">
+                                                    <use xlink:href="sprite.svg#seeds"></use>
+                                                </svg>
+                                                <p class="ingredients">Кунжутное семя</p>
+                                                <p class="conposition__weigdth">20 г</p>
+                                            </li>
+                                            <li class="composition__item">
+                                                <svg class="item__pic">
+                                                    <use xlink:href="sprite.svg#washing-powder"></use>
+                                                </svg>
+                                                <p class="ingredients">Сухое молоко</p>
+                                                <p class="conposition__weigdth">10 г</p>
+                                            </li>
+                                            <li class="composition__item">
+                                                <svg class="item__pic">
+                                                    <use xlink:href="sprite.svg#apitherapy"></use>
+                                                </svg>
+                                                <p class="ingredients">Зам.сахара</p>
+                                                <p class="conposition__weigdth">4 г</p>
+                                            </li>
+                                            <li class="composition__item">
+                                                <svg class="item__pic">
+                                                    <use xlink:href="sprite.svg#beans"></use>
+                                                </svg>
+                                                <p class="ingredients">Какао бобы</p>
+                                                <p class="conposition__weigdth">4 г</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <h2 class="composition__title">батончики "морские водоросли"</h2>
+                                <div class="composition__desc">
+                                    <p class="composition__text">Гранола из морских водорослей с овсом, миндалем и
+                                        тыквенными
+                                        семечками. В состав также входят: сухое молоко, заменитель сахара и какао
+                                        бобы.
+                                    </p>
+                                    <div class="calorie">Калорийность<p>110 ккал</p>
+                                    </div>
+                                    <div class="weight">Вес<p>95 грамм</p>
+                                    </div>
+                                </div>
+                                <div class="total">
+                                    <p class="total__price">140 &#8381</p>
+                                    <button class="button delivery__button" type="button">Заказать</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="slide">
-                    <div class="barChocco">
-                        <div class="barChocco__pic">
-                            <img src="./image/batWater.png" alt="" class="barChocco__img">
-                        </div>
-                        <div class="barChocco__main">
-                            <div class="composition__box">
-                                <div class="composition__icon" id="iconBtn">
-                                    <svg class="composition__pic">
-                                        <use xlink:href="sprite.svg#chocolate-bar"></use>
-                                    </svg>
-                                    <p class="consist">состав</p>
-                                </div>
-                                <div class="list__box">
-                                    <ul class="composition__list" id="listComposotionOpen">
-                                        <li class="composition__item">
-                                            <svg class="item__pic">
-                                                <use xlink:href="sprite.svg#oat"></use>
-                                            </svg>
-                                            <p class="ingredients">Овёс</p>
-                                            <p class="conposition__weigdth">25 г</p>
-                                        </li>
-                                        <li class="composition__item">
-                                            <svg class="item__pic">
-                                                <use xlink:href="sprite.svg#seaweed"></use>
-                                            </svg>
-                                            <p class="ingredients">Мор.водоросли</p>
-                                            <p class="conposition__weigdth">15 г</p>
-                                        </li>
-                                        <li class="composition__item">
-                                            <svg class="item__pic">
-                                                <use xlink:href="sprite.svg#almond2"></use>
-                                            </svg>
-                                            <p class="ingredients">Миндаль</p>
-                                            <p class="conposition__weigdth">20 г</p>
-                                        </li>
-                                        <li class="composition__item">
-                                            <svg class="item__pic">
-                                                <use xlink:href="sprite.svg#washing-powder"></use>
-                                            </svg>
-                                            <p class="ingredients">Сухое молоко</p>
-                                            <p class="conposition__weigdth">10 г</p>
-                                        </li>
-                                        <li class="composition__item">
-                                            <svg class="item__pic">
-                                                <use xlink:href="sprite.svg#seeds"></use>
-                                            </svg>
-                                            <p class="ingredients">Тыкв.семечки</p>
-                                            <p class="conposition__weigdth">20 г</p>
-                                        </li>
-                                        <li class="composition__item">
-                                            <svg class="item__pic">
-                                                <use xlink:href="sprite.svg#apitherapy"></use>
-                                            </svg>
-                                            <p class="ingredients">Зам.сахара</p>
-                                            <p class="conposition__weigdth">4 г</p>
-                                        </li>
-                                        <li class="composition__item">
-                                            <svg class="item__pic">
-                                                <use xlink:href="sprite.svg#beans"></use>
-                                            </svg>
-                                            <p class="ingredients">Какао бобы</p>
-                                            <p class="conposition__weigdth">4 г</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <h2 class="composition__title">батончики "морские водоросли"</h2>
-                            <div class="composition__desc">
-                                <p class="composition__text">Гранола из морских водорослей с овсом, миндалем и
-                                    тыквенными
-                                    семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
-                                <div class="calorie">Калорийность<p>120 ккал</p>
-                                </div>
-                                <div class="weight">Вес<p>98 грамм</p>
-                                </div>
-                            </div>
-                            <div class="total">
-                                <p class="total__price">140 &#8381</p>
-                                <button class="button delivery__button" type="button">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide-open">
-                    <div class="barChocco">
-                        <div class="barChocco__pic">
-                            <img src="./image/batGrape.png" alt="" class="barChocco__img">
-                        </div>
-                        <div class="barChocco__main">
-                            <div class="composition__box">
-                                <div class="composition__icon" id="iconBtn2">
-                                    <svg class="composition__pic">
-                                        <use xlink:href="sprite.svg#chocolate-bar"></use>
-                                    </svg>
-                                    <p class="consist">состав</p>
-                                </div>
-                                <div class="list__box">
-                                    <ul class="composition__list" id="listComposotionOpen2">
-                                        <li class="composition__item">
-                                            <svg class="item__pic">
-                                                <use xlink:href="sprite.svg#grape"></use>
-                                            </svg>
-                                            <p class="ingredients">Виноград</p>
-                                            <p class="conposition__weigdth">25 г</p>
-                                        </li>
-                                        <li class="composition__item">
-                                            <svg class="item__pic">
-                                                <use xlink:href="sprite.svg#nut"></use>
-                                            </svg>
-                                            <p class="ingredients">Грецкий ореx</p>
-                                            <p class="conposition__weigdth">32 г</p>
-                                        </li>
-                                        <li class="composition__item">
-                                            <svg class="item__pic">
-                                                <use xlink:href="sprite.svg#seeds"></use>
-                                            </svg>
-                                            <p class="ingredients">Кунжутное семя</p>
-                                            <p class="conposition__weigdth">20 г</p>
-                                        </li>
-                                        <li class="composition__item">
-                                            <svg class="item__pic">
-                                                <use xlink:href="sprite.svg#washing-powder"></use>
-                                            </svg>
-                                            <p class="ingredients">Сухое молоко</p>
-                                            <p class="conposition__weigdth">10 г</p>
-                                        </li>
-                                        <li class="composition__item">
-                                            <svg class="item__pic">
-                                                <use xlink:href="sprite.svg#apitherapy"></use>
-                                            </svg>
-                                            <p class="ingredients">Зам.сахара</p>
-                                            <p class="conposition__weigdth">4 г</p>
-                                        </li>
-                                        <li class="composition__item">
-                                            <svg class="item__pic">
-                                                <use xlink:href="sprite.svg#beans"></use>
-                                            </svg>
-                                            <p class="ingredients">Какао бобы</p>
-                                            <p class="conposition__weigdth">4 г</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <h2 class="composition__title">батончики "морские водоросли"</h2>
-                            <div class="composition__desc">
-                                <p class="composition__text">Гранола из морских водорослей с овсом, миндалем и
-                                    тыквенными
-                                    семечками. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
-                                <div class="calorie">Калорийность<p>110 ккал</p>
-                                </div>
-                                <div class="weight">Вес<p>95 грамм</p>
-                                </div>
-                            </div>
-                            <div class="total">
-                                <p class="total__price">140 &#8381</p>
-                                <button class="button delivery__button" type="button">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="arrow">
-                    <div class="arrow__pic">
-                        <img src="image/arrow-scroll2.png" alt="" class="arrow__img">
-                    </div>
-                </div>
+            </div>
+            <div class="arrow__pic" id="right">
+                <img src="image/arrow-scroll2.png" alt="" class="arrow__img">
             </div>
         </section>
         <section id="team" class="team-section">
@@ -430,7 +431,7 @@
                         <li class="accordion__item">
                             <div class="accordion__desc" id="milk">
                                 <h3 class="accordion__title accordion__title-milk"">Батончики с молоком</h3>
-                                <p class="accordion__text" id="milkOpen">Рекомендуем употреблять батончики вместе
+                                <p class=" accordion__text" id="milkOpen">Рекомендуем употреблять батончики вместе
                                     с кокосовым или
                                     миндальным молоком. Так и вкуснее, и полезнее.
                                     Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех
@@ -553,7 +554,7 @@
                             <div class="form__row">
                                 <label for="" class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input type="text" class="form__input" name="name" required>
+                                    <input type="text" class="form__input" name="name" id="name" required>
                                     <div class="error"></div>
                                 </label>
                                 <label for="" class="form__block">
@@ -595,9 +596,9 @@
                         <div class="form__column">
                             <div class="form__row form__row--textarea">
                                 <label for="form__block">Комментарий</label>
-                                <textarea class="form__textarea form__textarea--textarea" required name="comment" id="" cols="30"
-                                    rows="10"></textarea>
-                                    <div class="error"></div>
+                                <textarea class="form__textarea form__textarea--textarea" required name="comment" id=""
+                                    cols="30" rows="10"></textarea>
+                                <div class="error"></div>
                             </div>
                             <div class="form__row form__row--radio">
                                 <label for="pay" class="form__block form__block--radio">
@@ -608,8 +609,8 @@
                                     <input id="notCall" type="checkbox" class="radio__square">Не перезванивать
                                 </label>
                             </div>
-                                <button class="button delivery__button" id="btnForm" type="button">Заказать</button>
-                                <button class="button clear__button" type="reset">Очистить</button>
+                            <button class="button delivery__button" id="btnForm" type="button">Заказать</button>
+                            <button class="button clear__button" type="reset">Очистить</button>
                         </div>
                     </form>
                 </div>

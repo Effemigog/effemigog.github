@@ -14,12 +14,40 @@ Array.from(panelItem).forEach(function (item, i, panelItem) {
 
 const fullscreenBtn = document.querySelector('#fullscreenMenuBtn');
 const fullscreenMenu = document.querySelector('#fullscreenMenu').classList;
+const close = document.querySelector('#close');
 
-fullscreenBtn.addEventListener('click', function () {
+fullscreenBtn.addEventListener('click', function (e) {
   if (fullscreenMenu.contains('fullscreen-menu')) {
     fullscreenMenu.add('fullscreen-menu-active');
-  }
+  } 
 })
+
+
+// слайдер меню
+const left = document.querySelector("#left");
+const right = document.querySelector("#right");
+const sliderList = document.querySelector("#sliderList");
+
+let slideStep = 0;
+
+left.addEventListener('click', function() {
+  slideStep -= calculateMaxWidth;
+  sliderList.style.transform ='translate(-' + slideStep + 'px)';
+})
+
+right.addEventListener('click', function() {
+  slideStep += calculateMaxWidth;
+  sliderList.style.transform ='translate(-' + slideStep + 'px)';
+})
+
+
+  
+let calculateMaxWidth = sliderList.offsetWidth;
+console.log(calculateMaxWidth);
+
+
+
+
 
 
 
@@ -56,14 +84,12 @@ btnForm.addEventListener('click', function (e) {
   e.preventDefault();
   if (validityForm(myForm)) {
 
-    const data = {
-      name: myForm.elements.name.value,
-      phone: myForm.elements.phone.value,
-      comment: myForm.elements.comment.value
-    };
-      const formData = new FormData();
-      formData.append('data');
-      console.log(formData);
+    const data = new FormData();
+    data.append('name', myForm.getElementsByClassName('name'));
+    data.append('phone', '89456411120');
+    data.append('comment', 'comment');
+    data.append('to','to@mail.ru');
+      
     
 
     const xhr = new XMLHttpRequest();
@@ -72,7 +98,7 @@ btnForm.addEventListener('click', function (e) {
     xhr.send(JSON.stringify(data));
     console.log(data)
     xhr.addEventListener('load', () => {
-      console.log(xhr.response);
+      alert(xhr.response);
     })
    
   }
