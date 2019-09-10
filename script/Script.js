@@ -1,14 +1,28 @@
 // Скрипт аккардеона
-let panelItem = document.querySelectorAll('.accordion__title');
-active = document.getElementsByClassName('accordion__text-open');
 
-Array.from(panelItem).forEach(function (item, i, panelItem) {
-  item.addEventListener('click', function (e) {
-    if (active.length > 0 && active[0] !== this)
-      active[0].classList.remove('accordion__text-open');
-    this.classList.toggle('accordion__text-open');
+
+
+  $('.accordion__title').click(function(){
+    var next  = $(this).next();
+
+    $('.accordion__text').removeClass('accordion__text-open');
+    next.toggleClass('accordion__text-open');			
   });
-});
+
+
+  
+
+
+// let panelItem = document.querySelectorAll('.accordion__title');
+// active = document.getElementsByClassName('accordion__text-open');
+
+// Array.from(panelItem).forEach(function (item, i, panelItem) {
+//   item.addEventListener('click', function (e) {
+//     if (active.length > 0 && active[0] !== this)
+//       active[0].classList.remove('accordion__text-open');
+//     this.classList.toggle('accordion__text-open');
+//   });
+// });
 
 // Кнопка меню
 
@@ -40,10 +54,8 @@ right.addEventListener('click', function() {
   sliderList.style.transform ='translate(-' + slideStep + 'px)';
 })
 
-
-  
 let calculateMaxWidth = sliderList.offsetWidth;
-console.log(calculateMaxWidth);
+
 
 
 
@@ -95,12 +107,11 @@ btnForm.addEventListener('click', function (e) {
     const xhr = new XMLHttpRequest();
     xhr.responseType = 'json';
     xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
-    xhr.send(JSON.stringify(data));
-    console.log(data)
-    xhr.addEventListener('load', () => {
-      alert(xhr.response);
-    })
-   
+    xhr.onload = function() {
+      alert(xhr.response)
+    }
+   xhr.send(data);
+   console.log(data)
   }
 
 });
@@ -128,14 +139,6 @@ function validityField(field) {
   field.nextElementSibling.textContent = field.validationMessage;
   return field.checkValidity();
 }
-
-
-
-
-
-
-
-
 
 let phone = form.phone;
 
@@ -195,29 +198,10 @@ floor.addEventListener('keydown', function (e) {
 
 // кнопка состав
 
-let iconBtn = document.querySelector('#iconBtn');
-let listComposotionOpen = document.querySelector('#listComposotionOpen').classList;
+$('.composition__icon').on('click', e => {
 
-iconBtn.addEventListener('click', function () {
-  if (listComposotionOpen.contains('composition__list-open')) {
-    listComposotionOpen.remove('composition__list-open');
-  }
-  else {
-    listComposotionOpen.add('composition__list-open');
-  }
-})
+  $('.composition__list').toggleClass('composition__list-open')
 
-let iconBtn2 = document.querySelector('#iconBtn2');
-let listComposotionOpen2 = document.querySelector('#listComposotionOpen2').classList;
-
-iconBtn2.addEventListener('click', function () {
-  if (listComposotionOpen2.contains('composition__list-open')) {
-    listComposotionOpen2.remove('composition__list-open');
-  }
-  else {
-    listComposotionOpen2.add('composition__list-open');
-  }
-})
-
+});
 
 

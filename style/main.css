@@ -343,7 +343,7 @@ ul > li {
   overflow: hidden; }
 
 section {
-  height: 100vh; }
+  min-height: 100vh; }
 
 a {
   text-decoration: none; }
@@ -1143,7 +1143,7 @@ a {
   display: none;
   opacity: 0; }
 
-.accordion__text-open + .accordion__text {
+.accordion__text-open {
   width: 50%;
   height: 100%;
   padding-left: 50px;
@@ -1153,7 +1153,7 @@ a {
   -o-transition: 0.3s;
   transition: 0.3s; }
   @media screen and (max-width: 480px) {
-    .accordion__text-open + .accordion__text {
+    .accordion__text-open {
       width: 100%; } }
 
 .delivery-section {
@@ -1362,7 +1362,8 @@ a {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden; }
   @media screen and (max-width: 768px) {
     .barChocco-container {
       -webkit-box-align: start;
@@ -1438,7 +1439,6 @@ a {
   padding: 1.5625rem 1.25rem 1.5625rem 2.1875rem;
   position: absolute;
   content: "";
-  right: 26%;
   display: none; }
   .composition__list-open {
     display: block; }
