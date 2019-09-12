@@ -1,41 +1,33 @@
 // Скрипт аккардеона
 
+let panelItem = document.querySelectorAll('.accordion__title');
+active = document.getElementsByClassName('accordion__text-open');
 
-
-  $('.accordion__title').click(function(){
-    var next  = $(this).next();
-
-    $('.accordion__text').removeClass('accordion__text-open');
-    next.toggleClass('accordion__text-open');			
+Array.from(panelItem).forEach(function (item, i, panelItem) {
+  item.addEventListener('click', function (e) {
+    if (active.length > 0 && active[0] !== this)
+      active[0].classList.remove('accordion__text-open');
+    this.classList.toggle('accordion__text-open');
   });
-
-
-  
-
-
-// let panelItem = document.querySelectorAll('.accordion__title');
-// active = document.getElementsByClassName('accordion__text-open');
-
-// Array.from(panelItem).forEach(function (item, i, panelItem) {
-//   item.addEventListener('click', function (e) {
-//     if (active.length > 0 && active[0] !== this)
-//       active[0].classList.remove('accordion__text-open');
-//     this.classList.toggle('accordion__text-open');
-//   });
-// });
+});
 
 // Кнопка меню
 
-const fullscreenBtn = document.querySelector('#fullscreenMenuBtn');
-const fullscreenMenu = document.querySelector('#fullscreenMenu').classList;
-const close = document.querySelector('#close');
+// const fullscreenBtn = document.querySelector('#fullscreenMenuBtn');
+// const fullscreenMenu = document.querySelector('#fullscreenMenu').classList;
+// const close = document.querySelector('#close');
 
-fullscreenBtn.addEventListener('click', function (e) {
-  if (fullscreenMenu.contains('fullscreen-menu')) {
-    fullscreenMenu.add('fullscreen-menu-active');
-  } 
+// fullscreenBtn.addEventListener('click', function (e) {
+//   if (fullscreenMenu.contains('fullscreen-menu')) {
+//     fullscreenMenu.add('fullscreen-menu-active');
+//   }
+// })
+$('.fullscreen__btn').on('click', function() {
+  $('.fullscreen-menu').toggleClass('fullscreen-menu-active')
+});
+$('.close').on('click', function() {
+  $('.fullscreen-menu-active').removeClass('fullscreen-menu-active')
 })
-
 
 // слайдер меню
 const left = document.querySelector("#left");
@@ -44,17 +36,46 @@ const sliderList = document.querySelector("#sliderList");
 
 let slideStep = 0;
 
-left.addEventListener('click', function() {
+left.addEventListener('click', function () {
   slideStep -= calculateMaxWidth;
-  sliderList.style.transform ='translate(-' + slideStep + 'px)';
+  sliderList.style.transform = 'translate(-' + slideStep + 'px)';
 })
 
-right.addEventListener('click', function() {
+right.addEventListener('click', function () {
   slideStep += calculateMaxWidth;
-  sliderList.style.transform ='translate(-' + slideStep + 'px)';
+  sliderList.style.transform = 'translate(-' + slideStep + 'px)';
 })
 
 let calculateMaxWidth = sliderList.offsetWidth;
+console.log(calculateMaxWidth)
+
+// Слайде р отзывы
+
+$('.navigation__pic').on('click', function (e) {
+  e.preventDefault();
+  let $this = $(this)
+  let step = 0;
+  let f = $('.rev__item').width();
+  console.log(f);
+  step = f;
+  if ($this.hasClass('navigation__pic-a')) {
+    $('.rev__item').css('transform', 'translate(0)');
+
+  }
+  if ($this.hasClass('navigation__pic-v')) {
+    $('.rev__item').css('transform', 'translate(-' + f + 'px)');
+
+  }
+  if ($this.hasClass('navigation__pic-m')) {
+    $('.rev__item').css('transform', 'translate(-' + f*2 + 'px)');
+
+  }
+})
+
+
+
+
+
 
 
 
@@ -100,18 +121,18 @@ btnForm.addEventListener('click', function (e) {
     data.append('name', myForm.getElementsByClassName('name'));
     data.append('phone', '89456411120');
     data.append('comment', 'comment');
-    data.append('to','to@mail.ru');
-      
-    
+    data.append('to', 'to@mail.ru');
+
+
 
     const xhr = new XMLHttpRequest();
     xhr.responseType = 'json';
     xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
-    xhr.onload = function() {
+    xhr.onload = function () {
       alert(xhr.response)
     }
-   xhr.send(data);
-   console.log(data)
+    xhr.send(data);
+    console.log(data)
   }
 
 });
