@@ -47,7 +47,7 @@ right.addEventListener('click', function () {
 })
 
 let calculateMaxWidth = sliderList.offsetWidth;
-console.log(calculateMaxWidth)
+
 
 // Слайдеp отзывы
 
