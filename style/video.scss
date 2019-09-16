@@ -1,0 +1,40 @@
+
+.video__box{
+    text-align: center;
+}
+.video__title{
+    font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.video__player{
+  position: relative;
+  padding-top: rem(100px);
+}
+.video{
+  min-width: rem(660px);
+  min-height: rem(405px);
+}
+.video__btn {
+  position: absolute;
+  content: url(./../image/Playwhite.png);
+  right: 15%;
+  bottom: 0%;
+  height: 83%;
+  width: 70%;
+  cursor: pointer;
+}
+.control{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: rem(10px);
+
+}
+.hidden{
+  display:none;
+}
+#playBtn {
+  border: solid 1px #333;
+  padding: 5px;
+  cursor: pointer;
+}

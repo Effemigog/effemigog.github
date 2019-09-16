@@ -12,16 +12,6 @@ Array.from(panelItem).forEach(function (item, i, panelItem) {
 });
 
 // Кнопка меню
-
-// const fullscreenBtn = document.querySelector('#fullscreenMenuBtn');
-// const fullscreenMenu = document.querySelector('#fullscreenMenu').classList;
-// const close = document.querySelector('#close');
-
-// fullscreenBtn.addEventListener('click', function (e) {
-//   if (fullscreenMenu.contains('fullscreen-menu')) {
-//     fullscreenMenu.add('fullscreen-menu-active');
-//   }
-// })
 $('.fullscreen__btn').on('click', function() {
   $('.fullscreen-menu').toggleClass('fullscreen-menu-active')
 });
@@ -37,19 +27,29 @@ const sliderList = document.querySelector("#sliderList");
 let slideStep = 0;
 
 left.addEventListener('click', function () {
-  slideStep -= calculateMaxWidth;
+  if (slideStep === 0) {
+    slideStep += calculateMaxWidth;
+    sliderList.style.transform = 'translate(-' + slideStep + 'px)';
+  }else {
+    slideStep -= calculateMaxWidth;
   sliderList.style.transform = 'translate(-' + slideStep + 'px)';
+  }  
 })
 
 right.addEventListener('click', function () {
-  slideStep += calculateMaxWidth;
+  if (slideStep === 0) {
+    slideStep += calculateMaxWidth;
+    sliderList.style.transform = 'translate(-' + slideStep + 'px)';
+  }else {
+    slideStep -= calculateMaxWidth;
   sliderList.style.transform = 'translate(-' + slideStep + 'px)';
+  }  
 })
 
 let calculateMaxWidth = sliderList.offsetWidth;
 console.log(calculateMaxWidth)
 
-// Слайде р отзывы
+// Слайдеp отзывы
 
 $('.navigation__pic').on('click', function (e) {
   e.preventDefault();
@@ -71,19 +71,6 @@ $('.navigation__pic').on('click', function (e) {
 
   }
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Команда
 
