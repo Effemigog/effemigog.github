@@ -24,7 +24,8 @@
   border-radius: 100px;
   border: none;
   line-height: 1.2;
-  font-weight: Bold; }
+  font-weight: Bold;
+  cursor: pointer; }
 
 .content__order {
   padding-top: 30px; }

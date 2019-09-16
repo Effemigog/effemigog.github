@@ -1,0 +1,42 @@
+.footer {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50px;
+  right: 50px; }
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.social__pic {
+  width: 20px;
+  height: 20px;
+  padding-left: 20px;
+  fill: #b3b3b3; }
+
+.social__pic:hover {
+  fill: black; }
+
+.adress {
+  font-size: 21px; }
+
+.phone {
+  font-size: 21px; }
+
+.phone::before {
+  content: url(./../icons/phone.svg);
+  top: 0;
+  left: 0; }
+
+.link__phone {
+  color: #0f5a47; }

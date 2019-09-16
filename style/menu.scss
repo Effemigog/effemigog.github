@@ -1,0 +1,28 @@
+.menu-section{
+    color: #fff;
+    background: url(./../image/menu-back.jpg) center center/cover no-repeat;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.menu__block{
+    display: flex;
+    justify-content: center;
+    margin-top: rem(150px);
+}
+.menu__title{
+    font-size: rem(48px);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu__block{
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+
+    @include tablets{
+        width: 30%;
+    }
+}

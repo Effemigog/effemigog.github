@@ -1,12 +1,26 @@
-html, body{
+html{
+    height: 100%;
+    font-size: 16px; 
+
+    @include tablets{
+        font-size: 13px;
+    }
+
+    @include phones{
+        font-size: 11px;
+    }
+}
+body{
+    touch-action: none;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    font-family: 'Alegreya Sans', sans-serif; 
+    font-family: 'Alegreya Sans', sans-serif;
+    
 }
-h1, h2, h3, h4, ul, p{
+h1, h2, h3, ul, p{
     margin: 0;
     padding: 0;
 }
@@ -14,11 +28,20 @@ ul > li{
     list-style: none;
 }
 .container{
+    width: 95%;
     max-width: 943px;
     margin: 0 auto;
+    min-height: 100%;
+    justify-content: center;
 }
 .wrapper{
     overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.maincontent{
+    height: 100%;
+    transition: .5s;
 }
 section{
     min-height: 100vh;

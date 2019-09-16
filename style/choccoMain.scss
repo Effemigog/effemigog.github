@@ -1,8 +1,13 @@
 .chocco__main{
-    padding-top: 23px;
+    padding-top: rem(23px);
 }
 .main__list{
     display: flex;
+
+    @include tablets{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .main__item{
     display: flex;
@@ -11,55 +16,87 @@
     align-items: center;
     position: relative;
     flex-wrap: wrap;
+    width: calc(100% / 3 - 20px);
+
+    @include tablets{
+        width: 95%;
+    }
+
+    @include phones{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        text-align: left;
+        padding-bottom: 7%;
+        align-items: flex-start;
+    }
 }
 .main__pic{
-    width: 70px;
-    height: 70px;
+    width: rem(60px);
+    height: rem(60px);
     background-color: #f2f5f4;
-    padding: 25px;
+    padding: rem(25px);
     border-radius: 50%;
-}
-.main__img{
-    max-width: 100%;   
+    fill: transparent;
+    stroke: #000;
+
+    @include phones{
+        width: rem(150px);
+    }
 }
 .main__title{
-    padding-top: 35px;
-    font-style: 27px;
+    padding-top: rem(35px);
+    font-style: rem(27px);
     font-weight: bold;
+
+    @include phones{
+        padding-left: 3%;
+    }
 }
 .main__text{
-    padding-top: 30px;
-    font-style: 18px;
+    padding-top: rem(30px);
+    font-style: rem(18px);
     color: #666666;
+
+    @include tablets{
+        padding: 0 24% 5%;
+    }
+
+    @include phones{
+        padding: 2% 0 0 3%;
+    }
 }
 .dots{
-    bottom: 195px;
-    left: 200px;
-    width: 20px;
-    height: 20px;
+    bottom: rem(207px);
+    left: rem(160px);
+    width: rem(20px);
+    height: rem(20px);
     border-radius: 50%;
     background-color: #f2f5f4;
     position: relative;
+
+    @include tablets{
+        display: none;
+    }
 }
 .dots::after{
-    left: 30px;
+    left: rem(30px);
     top: 28%;
     position: absolute;
     display: block;
     content: "";
-    width: 10px;
-    height: 10px;
+    width: rem(10px);
+    height: rem(10px);
     background-color: #f2f5f4;
     border-radius: 50%;
 }
 .dots::before{
-    right: 30px;
+    right: rem(30px);
     top: 28%;
     position: absolute;
     display: block;
     content: "";
-    width: 10px;
-    height: 10px;
+    width: rem(10px);
+    height: rem(10px);
     background-color: #f2f5f4;
     border-radius: 50%;
 }
