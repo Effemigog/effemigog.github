@@ -7,7 +7,7 @@ html{
     }
 
     @include phones{
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 body{
@@ -32,9 +32,12 @@ ul > li{
     max-width: 943px;
     margin: 0 auto;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .wrapper{
-    // overflow: hidden;
+    overflow: hidden;
     height: 100%;
     width: 100%;
 }
@@ -43,7 +46,7 @@ ul > li{
     transition: .5s;
 }
 section{
-    min-height: 100vh;
+    height: 100%;
 }
 a{
     text-decoration: none;

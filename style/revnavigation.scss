@@ -3,6 +3,7 @@
     padding-top: rem(20px);
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 .navigation__img{
     max-width: 100%;
@@ -10,7 +11,7 @@
 }
 .navigation__pic{
     width: rem(90px);
-    height: rem(75px);
+    height: rem(90px);
     border-radius: 50%;
    
 }

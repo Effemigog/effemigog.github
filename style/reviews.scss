@@ -68,8 +68,13 @@
 .rev__desc{
     font-size: 18px;
     color: #666666;
-    width: 100%;
+    width: 40%;
     padding-top: rem(40px);
+
+    @include tablets{
+        width: 60%;
+        padding-top: 0;
+    }
    
 }
 .rev__desc h3{

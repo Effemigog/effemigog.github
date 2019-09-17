@@ -315,7 +315,7 @@ html {
       font-size: 14px; } }
   @media screen and (max-width: 480px) {
     html {
-      font-size: 13px; } }
+      font-size: 12px; } }
 
 body {
   -ms-touch-action: none;
@@ -339,9 +339,19 @@ ul > li {
   width: 95%;
   max-width: 943px;
   margin: 0 auto;
-  height: 100%; }
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .wrapper {
+  overflow: hidden;
   height: 100%;
   width: 100%; }
 
@@ -352,7 +362,7 @@ ul > li {
   transition: .5s; }
 
 section {
-  min-height: 100vh; }
+  height: 100%; }
 
 a {
   text-decoration: none; }
@@ -805,8 +815,12 @@ a {
 .rev__desc {
   font-size: 18px;
   color: #666666;
-  width: 100%;
+  width: 40%;
   padding-top: 2.5rem; }
+  @media screen and (max-width: 768px) {
+    .rev__desc {
+      width: 60%;
+      padding-top: 0; } }
 
 .rev__desc h3 {
   color: #000000;
@@ -830,7 +844,8 @@ a {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  z-index: 1; }
 
 .navigation__img {
   max-width: 100%;
@@ -838,7 +853,7 @@ a {
 
 .navigation__pic {
   width: 5.625rem;
-  height: 4.6875rem;
+  height: 5.625rem;
   border-radius: 50%; }
 
 .navigation__list {
@@ -1189,7 +1204,8 @@ a {
   text-transform: uppercase;
   font-size: 3rem;
   font-weight: bold;
-  color: #0f5a47; }
+  color: #0f5a47;
+  z-index: 1; }
 
 .delivery-container {
   display: -webkit-box;
@@ -1205,8 +1221,10 @@ a {
   height: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  padding-top: 4.8125rem; }
+  justify-content: center; }
+  @media screen and (max-width: 768px) {
+    .delivery-container {
+      text-align: center; } }
 
 .delivery__form {
   display: -webkit-box;
@@ -1635,7 +1653,8 @@ a {
     position: absolute;
     content: url(./../image/berryvideo.png);
     bottom: -15%;
-    right: 0; }
+    right: 0;
+    z-index: -1; }
 
 .video__box {
   text-align: center; }
@@ -1660,7 +1679,7 @@ a {
   right: 0;
   bottom: 50%;
   cursor: pointer;
-  width: 20%;
+  width: 10%;
   margin: 0 auto; }
 
 .control {

@@ -60,7 +60,7 @@
                                 <li class="menu__item"><a href data-scroll-to="2" class="menu__link">Батончики</a></li>
                                 <li class="menu__item"><a href data-scroll-to="3" class="menu__link">Команда</a></li>
                                 <li class="menu__item"><a href data-scroll-to="4" class="menu__link">Меню</a></li>
-                                <li class="menu__item"><a href data-scroll-to="5 class=" menu__link">Отзывы</a></li>
+                                <li class="menu__item"><a href data-scroll-to="5" class="menu__link">Отзывы</a></li>
                                 <li class="menu__item"><a href data-scroll-to="6" class="menu__link">Как мы работаем</a>
                                 </li>
                                 <li class="menu__item"><a href data-scroll-to="8" class="menu__link">Контакты</a></li>
@@ -483,81 +483,86 @@
             </section>
             <section id="rev" class="section reviews">
                 <div class="container reviews-container">
-                    <div class="rev">
-                        <div class="rev__title">
-                            <h2>отзывы</h2>
+                    <div class="">
+                        <div class="rev">
+                            <div class="rev__title">
+                                <h2>отзывы</h2>
+                            </div>
+                            <div class="rev__desc">
+                                <ul class="rev__list">
+                                    <li class="rev__item" id="alena">
+                                        <div class="user__pic">
+                                            <img src="./image/revPhoto-1.jpg" alt="masha" class="user__img">
+                                        </div>
+                                        <div class="user__desc">
+                                            <h3>Лучший перекус</h3>
+                                            <p>Я ем малыми порциями, но часто. Это повышает мою
+                                                продуктивность в разы. В течение дня сижу за компьютером
+                                                и часто отходить в кафе или на кухню просто не могу себе позволить. А
+                                                батончик –
+                                                он всегда под рукой. Это приятно
+                                                и удобно.
+                                            </p>
+                                            <p>Алена Хмельницкая</p>
+                                        </div>
+                                    </li>
+                                    <li class="rev__item" id="vadim">
+                                        <div class="user__pic">
+                                            <img src="./image/revPhoto-3.jpg" alt="masha" class="user__img">
+                                        </div>
+                                        <div class="user__desc">
+                                            <h3>Идеально подходят для спортсменов</h3>
+                                            <p>После тренировок всегда хочется быстро закинуться чем-то
+                                                белковым, потому что до дома ещё нужно доехать. А кушать хочется.
+                                                Протеиновые
+                                                батончики всегда выручают в этом плане. Спасибо производителю за этот
+                                                качественный и экологичный продукт. </p>
+                                            <p>Вадим Грачев</p>
+                                        </div>
+                                    </li>
+                                    <li class="rev__item" id="masha">
+                                        <div class="user__pic">
+                                            <img src="./image/revPhoto-2.jpg" alt="masha" class="user__img">
+                                        </div>
+                                        <div class="user__desc">
+                                            <h3>Лучшие батончики премиум уровня</h3>
+                                            <p>Батончики понравились. На мой взгляд слегка завышена цена по
+                                                сравнению с конкурентами, однако, как говорится – оно того стоит.
+                                                Нравится
+                                                носить с собой, нравится держать в руке. Ну и конечно же, кушать.
+                                                Идеально
+                                                утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это
+                                                скорее
+                                                плюс,
+                                                чем минус.</p>
+                                            <p>Мария Орлова</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="rev__desc">
-                            <ul class="rev__list">
-                                <li class="rev__item" id="alena">
-                                    <div class="user__pic">
-                                        <img src="./image/revPhoto-1.jpg" alt="masha" class="user__img">
-                                    </div>
-                                    <div class="user__desc">
-                                        <h3>Лучший перекус</h3>
-                                        <p>Я ем малыми порциями, но часто. Это повышает мою
-                                            продуктивность в разы. В течение дня сижу за компьютером
-                                            и часто отходить в кафе или на кухню просто не могу себе позволить. А
-                                            батончик –
-                                            он всегда под рукой. Это приятно
-                                            и удобно.
-                                        </p>
-                                        <p>Алена Хмельницкая</p>
+                        <div class="rev-navigation">
+                            <ul class="navigation__list">
+                                <li class="navigation__item" id="alenaOpen">
+                                    <div class="navigation__pic navigation__pic-a">
+                                        <a href="#" class="navigation__link"><img src="./image/revPhoto-1.jpg" alt=""
+                                                class="navigation__img"></a>
                                     </div>
                                 </li>
-                                <li class="rev__item" id="vadim">
-                                    <div class="user__pic">
-                                        <img src="./image/revPhoto-3.jpg" alt="masha" class="user__img">
-                                    </div>
-                                    <div class="user__desc">
-                                        <h3>Идеально подходят для спортсменов</h3>
-                                        <p>После тренировок всегда хочется быстро закинуться чем-то
-                                            белковым, потому что до дома ещё нужно доехать. А кушать хочется.
-                                            Протеиновые
-                                            батончики всегда выручают в этом плане. Спасибо производителю за этот
-                                            качественный и экологичный продукт. </p>
-                                        <p>Вадим Грачев</p>
+                                <li class="navigation__item" id="vadimOpen">
+                                    <div class="navigation__pic navigation__pic-v">
+                                        <a href="#" class="navigation__link"><img src="./image/revPhoto-3.jpg" alt=""
+                                                class="navigation__img"></a>
                                     </div>
                                 </li>
-                                <li class="rev__item" id="masha">
-                                    <div class="user__pic">
-                                        <img src="./image/revPhoto-2.jpg" alt="masha" class="user__img">
-                                    </div>
-                                    <div class="user__desc">
-                                        <h3>Лучшие батончики премиум уровня</h3>
-                                        <p>Батончики понравились. На мой взгляд слегка завышена цена по
-                                            сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится
-                                            носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально
-                                            утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее
-                                            плюс,
-                                            чем минус.</p>
-                                        <p>Мария Орлова</p>
+                                <li class="navigation__item" id="mashaOpen">
+                                    <div class="navigation__pic navigation__pic-m">
+                                        <a href="#" class="navigation__link"><img src="./image/revPhoto-2.jpg" alt=""
+                                                class="navigation__img"></a>
                                     </div>
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="rev-navigation">
-                        <ul class="navigation__list">
-                            <li class="navigation__item" id="alenaOpen">
-                                <div class="navigation__pic navigation__pic-a">
-                                    <a href="#" class="navigation__link"><img src="./image/revPhoto-1.jpg" alt=""
-                                            class="navigation__img"></a>
-                                </div>
-                            </li>
-                            <li class="navigation__item" id="vadimOpen">
-                                <div class="navigation__pic navigation__pic-v">
-                                    <a href="#" class="navigation__link"><img src="./image/revPhoto-3.jpg" alt=""
-                                            class="navigation__img"></a>
-                                </div>
-                            </li>
-                            <li class="navigation__item" id="mashaOpen">
-                                <div class="navigation__pic navigation__pic-m">
-                                    <a href="#" class="navigation__link"><img src="./image/revPhoto-2.jpg" alt=""
-                                            class="navigation__img"></a>
-                                </div>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </section>
