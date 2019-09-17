@@ -8,15 +8,9 @@
 }   
 .accordion{
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 65%;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
-
-    @include phones{
-        width: 100%;
-    }
 }
 .accordion__desc{
     display: flex;
@@ -41,14 +35,17 @@
 .accordion__text{
     display: none;
     opacity: 0;
+    transition: 0.3s;
 }
 .accordion__text-open + .accordion__text{
-    width: 50%;
+    width: 62%;
     height: 100%;
-    padding-left: 50px;
+    padding-left: rem(34px);
+    padding-top: rem(48px);
+    line-height: 1.5;
     display: block;
     opacity: 1;
-    transition: 0.3s;
+    
 
     @include phones{
         width: 100%;

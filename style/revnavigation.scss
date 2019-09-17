@@ -9,7 +9,7 @@
     border-radius: 50%;
 }
 .navigation__pic{
-    width: rem(75px);
+    width: rem(90px);
     height: rem(75px);
     border-radius: 50%;
    
@@ -18,7 +18,11 @@
     display: flex;
 }
 .navigation__item{
-    padding-right: rem(20px);   
+    padding-right: rem(20px); 
+    
+    @include tablets{
+        padding-right: rem(40px);
+    }
 }
 
 .navigation__pic:hover{

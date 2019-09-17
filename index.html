@@ -113,7 +113,9 @@
                             <nav class="pagination">
                                 <ul class="pagination__list">
                                     <li class="pagination__item active"><a class="pagination__link pagination__link"
-                                            href="1"></a></li>
+                                            href="0"></a></li>
+                                    <li class="pagination__item"><a class="pagination__link" href
+                                            data-scroll-to="1"></a></li>
                                     <li class="pagination__item"><a class="pagination__link" href
                                             data-scroll-to="2"></a></li>
                                     <li class="pagination__item"><a class="pagination__link" href
@@ -126,8 +128,6 @@
                                             data-scroll-to="6"></a></li>
                                     <li class="pagination__item"><a class="pagination__link" href
                                             data-scroll-to="7"></a></li>
-                                    <li class="pagination__item"><a class="pagination__link" href
-                                            data-scroll-to="8"></a></li>
                                 </ul>
                             </nav>
                         </aside>
@@ -135,7 +135,7 @@
                 </div>
             </section>
             <section id="whyChocco" class="section whyChocco">
-                <div class="container container_chocco">
+                <div class="container container__chocco">
                     <div class="chocco__box">
                         <h2 class="box__title">почему chocco?</h2>
                         <p class="box__text">В нашем мире все происходит очень быстро, поэтому мы делаем батончики,
@@ -189,7 +189,7 @@
                 </div>
                 <div class="container barChocco-container">
                     <ul class="slide__list" id="sliderList">
-                        <li class="slide">
+                        <li class="slide sea">
                             <div class="barChocco__pic">
                                 <img src="./image/batWater.png" alt="" class="barChocco__img">
                             </div>
@@ -273,7 +273,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="slide">
+                        <li class="slide grape">
                             <div class="barChocco__pic">
                                 <img src="./image/batGrape.png" alt="" class="barChocco__img">
                             </div>
@@ -566,7 +566,7 @@
                     <div class="video__box">
                         <h2 class="video__title">как мы работаем</h2>
                         <div class="video__player">
-                            <video class="video">
+                            <video class="video" poster="./image/poster.jpg">
                                 <source src="./video/rec.mp4" type="video/mp4">
                             </video>
                             <div class="video__btn" id="bigBtn"></div>

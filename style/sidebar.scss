@@ -1,19 +1,15 @@
 .sidebar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.pagination{
-    position: fixed !important;
+    position: fixed;
+    right: 4%;
+    top: 27%;
 }
 .pagination__link {
-    width: rem(6px);
-    height: rem(6px);
+    width: rem(7px);
+    height: rem(7px);
     display: block;
     background: #fff;
     border-radius: 50%; 
-    margin: rem(5px);  
+    margin: rem(9px);  
   }
 .pagination__item{
     &.active{

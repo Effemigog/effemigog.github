@@ -1,4 +1,13 @@
+.video__section{
+  position: relative;
 
+  &:after{
+    position: absolute;
+    content: url(./../image/berryvideo.png);
+    bottom: -15%;
+    right: 0;
+  }
+}
 .video__box{
     text-align: center;
 }
@@ -8,21 +17,22 @@
   text-transform: uppercase;
 }
 .video__player{
-  position: relative;
-  padding-top: rem(100px);
+  padding-top: rem(35px);
 }
 .video{
+  position: relative;
   min-width: rem(660px);
   min-height: rem(405px);
 }
 .video__btn {
   position: absolute;
-  content: url(./../image/Playwhite.png);
-  right: 15%;
-  bottom: 0%;
-  height: 83%;
-  width: 70%;
+  content: url(./../image/right.png);
+  left: 0;
+  right: 0;
+  bottom: 50%;
   cursor: pointer;
+  width: 20%;
+  margin: 0 auto;
 }
 .control{
   display: flex;

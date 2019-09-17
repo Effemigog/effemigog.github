@@ -43,6 +43,9 @@
 
     }
 }
+.grape{
+    position: relative;
+}
 .item__pic{
     width: rem(25px);
     height: rem(35px);
@@ -67,6 +70,12 @@
         display: block;
         
     }
+
+    @include tablets{
+        top: 0;
+        right: 11%;
+    }
+    
 }
 .arrow__img{
     cursor: pointer;

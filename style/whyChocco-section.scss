@@ -18,8 +18,9 @@
         display: none;
     }
 }
-.container_chocco{
+.container__chocco{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: rem(59px);
 }
