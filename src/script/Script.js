@@ -1,7 +1,7 @@
 // Скрипт аккардеона
 
 let panelItem = document.querySelectorAll('.accordion__title');
-active = document.getElementsByClassName('accordion__text-open');
+let active = document.getElementsByClassName('accordion__text-open');
 
 Array.from(panelItem).forEach(function (item, i, panelItem) {
   item.addEventListener('click', function (e) {
