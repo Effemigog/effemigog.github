@@ -1,0 +1,102 @@
+.chocco__main{
+    padding-top: rem(34px);
+}
+.main__list{
+    display: flex;
+
+    @include tablets{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.main__item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    width: calc(100% / 3);
+
+    @include tablets{
+        width: 95%;
+    }
+
+    @include phones{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        text-align: left;
+        padding-bottom: 7%;
+        align-items: flex-start;
+    }
+}
+.main__pic{
+    width: rem(76px);
+    height: rem(76px);
+    background-color: #f2f5f4;
+    padding: rem(25px);
+    border-radius: 50%;
+    fill: transparent;
+    stroke: #000;
+
+    @include phones{
+        width: rem(150px);
+    }
+}
+.main__title{
+    padding-top: rem(35px);
+    font-size: rem(27px);
+    font-weight: bold;
+
+    @include phones{
+        padding-left: 3%;
+    }
+}
+.main__text{
+    padding-top: rem(30px);
+    font-size: rem(18px);
+    color: #666666;
+
+    @include tablets{
+        padding: 0 24% 5%;
+    }
+
+    @include phones{
+        padding: 2% 0 0 3%;
+    }
+}
+.dots{
+    bottom: rem(207px);
+    left: rem(160px);
+    width: rem(20px);
+    height: rem(20px);
+    border-radius: 50%;
+    background-color: #f2f5f4;
+    position: relative;
+
+    @include tablets{
+        display: none;
+    }
+}
+.dots::after{
+    left: rem(30px);
+    top: 28%;
+    position: absolute;
+    display: block;
+    content: "";
+    width: rem(10px);
+    height: rem(10px);
+    background-color: #f2f5f4;
+    border-radius: 50%;
+}
+.dots::before{
+    right: rem(30px);
+    top: 28%;
+    position: absolute;
+    display: block;
+    content: "";
+    width: rem(10px);
+    height: rem(10px);
+    background-color: #f2f5f4;
+    border-radius: 50%;
+}

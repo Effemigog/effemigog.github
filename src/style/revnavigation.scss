@@ -1,0 +1,33 @@
+
+.rev-navigation{
+    padding-top: rem(20px);
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+.navigation__img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+.navigation__pic{
+    width: rem(90px);
+    height: rem(90px);
+    border-radius: 50%;
+   
+}
+.navigation__list{
+    display: flex;
+}
+.navigation__item{
+    padding-right: rem(20px); 
+    
+    @include tablets{
+        padding-right: rem(40px);
+    }
+}
+
+.navigation__pic:hover{
+    border: rem(4px) solid darkgreen;
+    box-sizing: border-box;
+}
+

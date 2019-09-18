@@ -1,0 +1,66 @@
+.reviews {
+  position: relative;
+  margin-top: 70px;
+  background: url(./../image/revBerry.png) right top no-repeat; }
+
+.reviews::after {
+  position: absolute;
+  content: url(./../image/revBerry2.png);
+  bottom: 0px;
+  left: 0; }
+
+.reviews::before {
+  position: absolute;
+  content: url(./../image/revPattern.png);
+  top: 450px;
+  left: 0; }
+
+.rev__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 40px;
+  background: url(./../image/rev4.png) right top no-repeat;
+  background-color: #f8faf9; }
+
+.rev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.rev__title {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.user__pic {
+  width: 260px;
+  padding-right: 20px; }
+
+.rev__img {
+  max-width: 100%; }
+
+.rev__desc {
+  padding-top: 80px;
+  font-size: 18px;
+  color: #666666; }
+
+.rev__desc h3 {
+  color: #000000;
+  font-size: 30px; }
+
+.rev__desc p {
+  padding-top: 35px; }

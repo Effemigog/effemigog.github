@@ -1,0 +1,18 @@
+.barChocco-section{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.barChocco-container{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    @include tablets{
+        align-items: start;
+    }
+}
+
+
+

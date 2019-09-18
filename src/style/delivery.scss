@@ -1,0 +1,25 @@
+.delivery-section{
+    background: url(image/elivery-pattern.png) center center/cover no-repeat;
+
+    & button{
+        margin-top: rem(30px);
+    }
+}
+.delivery__title{
+    text-transform: uppercase;
+    font-size: rem(48px);
+    font-weight: bold;
+    color: #0f5a47;
+    z-index: 1;
+}
+.delivery-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+
+    @include tablets{
+           text-align: center;
+    }
+}

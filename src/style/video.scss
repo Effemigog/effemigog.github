@@ -1,0 +1,52 @@
+.video__section{
+  position: relative;
+
+  &:after{
+    position: absolute;
+    content: url(image/berryvideo.png);
+    bottom: -15%;
+    right: 0;
+    z-index: -1;
+  }
+}
+.video__box{
+    text-align: center;
+    width: 100%;
+}
+.video__title{
+    font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.video__player{
+  padding-top: rem(35px);
+}
+.video{
+  position: relative;
+  min-width: rem(660px);
+  min-height: rem(405px);
+}
+.video__btn {
+  position: absolute;
+  content: url(image/right.png);
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  cursor: pointer;
+  width: 10%;
+  margin: 0 auto;
+}
+.control{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: rem(10px);
+
+}
+.hidden{
+  display:none;
+}
+#playBtn {
+  border: solid 1px #333;
+  padding: 5px;
+  cursor: pointer;
+}

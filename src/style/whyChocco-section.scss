@@ -1,0 +1,26 @@
+.whyChocco{
+    position: relative;
+    background: url(image/sheet.png) left center no-repeat;
+
+    @include phones{
+        background: none;
+    }
+}
+
+.whyChocco::after{
+    position: absolute;
+    display: block;
+    content: url(image/raspberries.png);
+    top: 75%;
+    left: 0;
+
+    @include phones{
+        display: none;
+    }
+}
+.container__chocco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: rem(59px);
+}

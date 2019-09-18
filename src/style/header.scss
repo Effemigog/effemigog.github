@@ -1,0 +1,64 @@
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fullscreen__btn {
+    @include tablets{
+        width: rem(25px);
+        border-bottom: 3px solid #fff;
+        border-radius: 1px;
+        position: relative;
+        cursor: pointer;
+    }
+	
+}
+.fullscreen__btn::after{
+    @include tablets{
+    position: absolute;
+    content: "";
+    width: rem(25px);
+    border-bottom: 3px solid #fff;
+    border-radius: 1px;
+    bottom: 5px;
+    }
+}
+.fullscreen__btn::before{
+    @include tablets{
+    position: absolute;
+    content: "";
+    top: 0.6rem;
+    width: rem(25px);
+    border-bottom: 3px solid #fff;
+    border-radius: 1px;
+    }
+}
+.nav__list{
+    padding-top: rem(17px);
+    display: flex;
+    min-width: 100%;
+}
+.nav__item{
+    padding-right: rem(24px);
+    font-size: rem(18px);
+
+    @include tablets{
+        display: none;
+    }
+}
+.logo{
+    padding-top: rem(20px);
+}
+.phone__link{
+    font-size: rem(24px);
+    color: #fff;
+}
+.nav__link{
+    color: #fff;
+}
+.phone__link::before{
+    content: url(image/phone_.png);
+    top: 0;
+    left: 0;
+}
+

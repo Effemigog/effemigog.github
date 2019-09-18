@@ -1,0 +1,92 @@
+
+.team-section::after{
+    content: url(image/team-berry.png);
+    bottom: 0;
+    left: 0;
+}
+.team__title{
+    font-size: rem(48px);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.team-content{
+    padding-top: rem(42px);
+}
+.team{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.team__list{
+    display: flex;
+    justify-content: space-between;
+
+    @include tablets{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.team__item{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 4 - 5px);
+    text-align: center;
+    align-items: center;
+    padding-right: rem(20px);
+
+    @include tablets{
+        width: 32%;
+        padding-bottom: 5%; 
+    }
+
+    @include phones{
+        width: 44%;
+    }
+}
+.team__pic{
+    width: rem(220px);
+
+    @include phones{
+        width: rem(190px);
+    }
+ 
+}
+.team__img{
+    max-width: 100%;
+
+    @include phones{
+        max-width: 100%;
+    }
+}
+.team__name{
+    padding-top: rem(25px);
+    font-size: rem(20px);
+}
+.team__position{
+    padding-top: rem(20px);
+    font-size: rem(18px);
+}
+.team__hover{
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+}
+.team__hover-active + .team__hover{
+    display: block;
+    opacity: 1;
+    height: 100%;
+    transition: 0.4s;
+}
+.team__poligon{
+    cursor: pointer;
+    &-active{
+        transform: rotate(180deg);
+        transition: 0.4s;
+    }
+}
+.team__text{
+    padding-top: rem(5px);
+    font-size: rem(18px);
+    color: #666666;
+}

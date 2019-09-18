@@ -1,0 +1,75 @@
+.composition__title{
+    padding-top: rem(40px);
+    font-size: rem(36px);
+    font-weight: bold;
+    text-transform: uppercase;
+
+    @include tablets{
+        text-align: center;
+    }
+}
+.barChocco__main{
+
+    @include tablets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+}
+.composition__desc{
+    padding-top: rem(30px);
+    display: flex;
+    flex-wrap: wrap;
+    color: #666666;
+
+    @include tablets{
+        justify-content: center;
+    }
+}
+.composition__text{
+    flex: 81% 0;
+    padding-bottom: rem(50px);
+
+    @include tablets{
+        
+        text-align: center;
+        flex: 100%
+    }
+
+}
+.total{
+    padding-top: rem(35px);
+    display: flex;
+    & .total__price{
+        font-size: rem(60px);
+        padding-right: rem(30px);
+    }
+}
+.weight{
+    padding-left: rem(50px);
+    & p{
+        font-weight: bold;
+    }
+}
+.calorie{
+    & p{
+        font-weight: bold;
+    }
+}
+.slide__list{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: .5s;
+}
+.slide{
+    height: 100%;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+
+    @include tablets{
+        flex-direction: column;
+    }
+}

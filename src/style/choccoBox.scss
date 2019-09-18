@@ -1,0 +1,19 @@
+.chocco__box{
+    text-align: center;
+}
+.box__title{
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.box__text{
+    padding: 1% 23% 0;
+    font-size: 18px;
+    color: #666666; 
+
+    @include tablets{
+      padding: 1% 16%;
+    }
+}
+
+  

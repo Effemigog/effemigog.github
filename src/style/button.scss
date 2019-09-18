@@ -1,0 +1,29 @@
+.button {
+  color: #0f5a47;
+  font-size: 19px;
+  background-color: #fff;
+  padding: 17px 30px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  border: none;
+  line-height: 1.2;
+  font-weight: Bold;
+  cursor: pointer;
+  outline: none;
+}
+.delivery__button {
+  color: #fff;
+  background-color: #0f5a47;
+}
+
+.delivery .delivery__button{
+    
+  @include tablets {
+    margin-left: rem(135px);
+  }
+}
+.clear__button {
+  font-weight: 400;
+  color: #0f5a47;
+  background: transparent;
+}
