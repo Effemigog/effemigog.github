@@ -1,16 +1,16 @@
 .reviews{
     position: relative;
-    background: url(./../image/revBerry.png) right top no-repeat;
+    background: url(./../../src/image/revBerry.png) right top no-repeat;
 }
 .reviews::after{
     position: absolute;
-    content: url(./../image/revBerry2.png);
+    content: url(./../../src/image/revBerry2.png);
     bottom: 0px;
     left: 0;
 } 
 .reviews::before{
     position: absolute;
-    content: url(./../image/revPattern.png);
+    content: url(./../../src/image/revPattern.png);
     top: rem(450px);
     left: 0;
 
@@ -18,7 +18,7 @@
 .rev__list{
     display: flex;
     overflow: hidden;
-    background: url(./../image/rev4.png) right top no-repeat;
+    background: url(./../../src/image/rev4.png) right top no-repeat;
     background-color: #f8faf9;
     padding: rem(46px);
     padding-right: 0;
@@ -55,7 +55,7 @@
     }
 }
 .user__pic{
-    width: rem(260px);
+    width: rem(500px);
     padding-right: rem(20px);
 
     @include tablets{
