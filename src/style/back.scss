@@ -1,5 +1,5 @@
 .title{
-    background: url(./../../src/image/back.jpg) 100% 100% no-repeat;
+    background: url(image/back.jpg) 100% 100% no-repeat;
     background-size: cover;
     background-color: #61c4d9;
 
@@ -10,7 +10,7 @@
 }
 
 .title-container{
-   background: url(./../../src/image/back2.png) right center/cover no-repeat;
+   background: url(image/back2.png) right center/cover no-repeat;
    
    @include tablets{
        background-size: contain;

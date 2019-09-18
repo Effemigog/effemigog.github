@@ -1,16 +1,16 @@
 .reviews{
     position: relative;
-    background: url(./../../src/image/revBerry.png) right top no-repeat;
+    background: url(image/revBerry.png) right top no-repeat;
 }
 .reviews::after{
     position: absolute;
-    content: url(./../../src/image/revBerry2.png);
+    content: url(image/revBerry2.png);
     bottom: 0px;
     left: 0;
 } 
 .reviews::before{
     position: absolute;
-    content: url(./../../src/image/revPattern.png);
+    content: url(image/revPattern.png);
     top: rem(450px);
     left: 0;
 
@@ -18,7 +18,7 @@
 .rev__list{
     display: flex;
     overflow: hidden;
-    background: url(./../../src/image/rev4.png) right top no-repeat;
+    background: url(image/rev4.png) right top no-repeat;
     background-color: #f8faf9;
     padding: rem(46px);
     padding-right: 0;

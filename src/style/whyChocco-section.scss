@@ -1,6 +1,6 @@
 .whyChocco{
     position: relative;
-    background: url(./../../src/image/sheet.png) left center no-repeat;
+    background: url(image/sheet.png) left center no-repeat;
 
     @include phones{
         background: none;
@@ -10,7 +10,7 @@
 .whyChocco::after{
     position: absolute;
     display: block;
-    content: url(./../../src/image/raspberries.png);
+    content: url(image/raspberries.png);
     top: 75%;
     left: 0;
 
