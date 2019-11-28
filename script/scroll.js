@@ -50,10 +50,10 @@ const scrollViewport = direction => {
     const nextSection = activeSection.next();
     const prevSection = activeSection.prev();
 
-    if (direction === 'next') {
+    if (direction === 'next' && nextSection.lenght) {
         perform(nextSection.index());
     }
-    if (direction === 'prev') {
+    if (direction === 'prev'  && prevSection.lenght) {
         perform(prevSection.index());
     }
 }
