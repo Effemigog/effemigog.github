@@ -1,13 +1,26 @@
 .title-container{
     display: flex;
     justify-content: space-between;
-    z-index: 1;
+
+    @include tablets{
+        align-items: center;
+        justify-content: center;
+    }
+    
 }
 .left__block{
     width: 55%;
+
+    @include tablets{
+        width: 95%;
+    }
 }
 .right__block{
     width: 35%;
     display: flex;
     justify-content:flex-end;
+
+    @include tablets{
+        display: none;
+    }
 }

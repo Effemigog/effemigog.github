@@ -1,0 +1,56 @@
+.accordion__title{
+    font-size: rem(48px);
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    height: 100%;
+    padding: 0 rem(20px);
+    
+}   
+.accordion{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+
+    @include phones{
+        width: 100%;
+    }
+}
+.accordion__desc{
+    display: flex;
+    background-color: rgba(57, 60, 62, 0.7);
+
+}
+.accordion__list{
+    display: flex;
+}
+.accordion__title-milk{
+    background: url(./../image/menu-milk.jpg) center center no-repeat;
+    background-size: cover;
+}
+.accordion__title-fruit{
+    background: url(./../image/menu-fruct.jpg) center center no-repeat;
+    background-size: cover;
+}
+.accordion__title-berry{
+    background: url(./../image/menu-berry.jpg) center center no-repeat;
+    background-size: cover;
+}
+.accordion__text{
+    display: none;
+    opacity: 0;
+}
+.accordion__text-open + .accordion__text{
+    width: 50%;
+    height: 100%;
+    padding-left: 50px;
+    display: block;
+    opacity: 1;
+    transition: 0.3s;
+
+    @include phones{
+        width: 100%;
+    }
+}
